@@ -1,0 +1,9 @@
+﻿<Items Description="КлассификаторАдресныхОбъектовБеларуси" Columns="Code,Name,Socr,Index">
+	<Item Code="010000000000000000000" Name="Брестская" Socr="обл." Index=""/>
+	<Item Code="020000000000000000000" Name="Витебская" Socr="обл." Index=""/>
+	<Item Code="030000000000000000000" Name="Гомельская" Socr="обл." Index=""/>
+	<Item Code="040000000000000000000" Name="Гродненская" Socr="обл." Index=""/>
+	<Item Code="050000000000000000000" Name="Минск" Index=""/>
+	<Item Code="060000000000000000000" Name="Минская" Socr="обл." Index=""/>
+	<Item Code="070000000000000000000" Name="Могилевская" Socr="обл." Index=""/>
+</Items>

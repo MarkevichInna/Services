@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WSReference xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8df1da9c-b709-4736-bd93-83f265514ecc">
+  <producedTypes>
+    <managerType typeId="01c350be-5516-436a-8bf5-4670e8db80ab" valueTypeId="a3eed769-8a12-4d40-9500-074060e81027"/>
+  </producedTypes>
+  <name>ITS</name>
+  <synonym>
+    <key>ru</key>
+    <value>ITS</value>
+  </synonym>
+  <comment></comment>
+  <locationURL>https://partner-api.1c.ru/api/ws/subscription?wsdl</locationURL>
+</mdclass:WSReference>

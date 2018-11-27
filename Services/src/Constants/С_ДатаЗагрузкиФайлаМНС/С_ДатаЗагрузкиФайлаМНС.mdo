@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e732e7e-cdf5-44e0-9052-43139960f7bf">
+  <producedTypes>
+    <managerType typeId="8060debd-1a81-41e8-9d1f-4846757b9120" valueTypeId="daad43b7-d448-4852-bd3e-ef53b525067b"/>
+    <valueManagerType typeId="9e108b86-517f-4d2c-b9b6-9724bab743b4" valueTypeId="df5373b6-5626-45e8-9d2d-0a274139d7bc"/>
+  </producedTypes>
+  <name>С_ДатаЗагрузкиФайлаМНС</name>
+  <synonym>
+    <key>ru</key>
+    <value>С дата загрузки файла МНС</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

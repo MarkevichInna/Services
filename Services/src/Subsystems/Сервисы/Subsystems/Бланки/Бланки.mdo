@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a64fc899-feb0-4ed0-aad6-d6d3eea97c95">
+  <name>Бланки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бланки</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>HTTPService.CheckBlanks</content>
+  <parentSubsystem>Subsystem.Сервисы</parentSubsystem>
+</mdclass:Subsystem>

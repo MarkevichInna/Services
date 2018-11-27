@@ -1,0 +1,181 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://FreeOrgInfo">
+	<valueType name="ТипНомерДокумента" base="xs:string" maxLength="256"/>
+	<valueType name="ТипНомерДекларации" base="xs:string" maxLength="30"/>
+	<valueType name="ТипНомерСтроки" base="xs:int" totalDigits="10"/>
+	<valueType name="ВидыБанковскихСчетов" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Расчетный</enumeration>
+		<enumeration xsi:type="xs:string">Депозитный</enumeration>
+		<enumeration xsi:type="xs:string">Ссудный</enumeration>
+		<enumeration xsi:type="xs:string">ЧековыеКнижки</enumeration>
+		<enumeration xsi:type="xs:string">Аккредитивы</enumeration>
+		<enumeration xsi:type="xs:string">Иной</enumeration>
+	</valueType>
+	<valueType name="ВидыДенежныхДокументов" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Билеты</enumeration>
+		<enumeration xsi:type="xs:string">Путевки</enumeration>
+		<enumeration xsi:type="xs:string">ПочтовыеМарки</enumeration>
+		<enumeration xsi:type="xs:string">ТалоныНаГСМ</enumeration>
+		<enumeration xsi:type="xs:string">Прочее</enumeration>
+	</valueType>
+	<valueType name="ВидыДоговоров" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">СПокупателем</enumeration>
+		<enumeration xsi:type="xs:string">СПоставщиком</enumeration>
+		<enumeration xsi:type="xs:string">СКомиссионером</enumeration>
+		<enumeration xsi:type="xs:string">СКомитентом</enumeration>
+		<enumeration xsi:type="xs:string">СКомитентомНаЗакупку</enumeration>
+		<enumeration xsi:type="xs:string">СКомиссионеромНаЗакупку</enumeration>
+		<enumeration xsi:type="xs:string">Прочее</enumeration>
+	</valueType>
+	<valueType name="ВидыКИ" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">ПочтовыйАдрес</enumeration>
+		<enumeration xsi:type="xs:string">ЮридическийАдрес</enumeration>
+		<enumeration xsi:type="xs:string">ФактическийАдрес</enumeration>
+		<enumeration>Телефон</enumeration>
+		<enumeration xsi:type="xs:string">ТелефонДомашний</enumeration>
+		<enumeration xsi:type="xs:string">ТелефонРабочий</enumeration>
+		<enumeration>Факс</enumeration>
+		<enumeration>ВебСтраница</enumeration>
+		<enumeration>АдресЭлектроннойПочты</enumeration>
+		<enumeration xsi:type="xs:string">ПользовательскаяКИДругое</enumeration>
+		<enumeration xsi:type="xs:string">ПользовательскаяКИТелефон</enumeration>
+		<enumeration xsi:type="xs:string">ПользовательскаяКИАдрес</enumeration>
+		<enumeration xsi:type="xs:string">ПользовательскаяКИАдресЭлектроннойПочты</enumeration>
+		<enumeration xsi:type="xs:string">ПользовательскаяКИВебСтраница</enumeration>
+		<enumeration xsi:type="xs:string">ПользовательскаяКИФакс</enumeration>
+	</valueType>
+	<valueType name="ВидыРасчетовСКонтрагентами" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">СПоставщиком</enumeration>
+		<enumeration xsi:type="xs:string">СПокупателем</enumeration>
+		<enumeration xsi:type="xs:string">КредитыИЗаймы</enumeration>
+		<enumeration xsi:type="xs:string">Прочее</enumeration>
+	</valueType>
+	<valueType name="ВидыРасчетовСПокупателямиПоставщиками" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Долг</enumeration>
+		<enumeration xsi:type="xs:string">Аванс</enumeration>
+	</valueType>
+	<valueType name="Пол" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Мужской</enumeration>
+		<enumeration xsi:type="xs:string">Женский</enumeration>
+	</valueType>
+	<valueType name="ЮридическоеФизическоеЛицо" base="xs:string" variety="Atomic">
+		<enumeration>ЮридическоеЛицо</enumeration>
+		<enumeration>ФизическоеЛицо</enumeration>
+	</valueType>
+	<objectType name="КлючевыеСвойстваКонтрагент" open="true" sequenced="true">
+		<property name="Наименование" type="xs:string"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0"/>
+		<property name="ИНН" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="12"/>
+		</property>
+		<property name="КПП" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="9"/>
+		</property>
+		<property xmlns:d3p1="http://FreeOrgInfo" name="ЮридическоеФизическоеЛицо" type="d3p1:ЮридическоеФизическоеЛицо"/>
+		<property name="НаименованиеСокращенное" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваКонтрагентГруппа" open="true" sequenced="true">
+		<property name="Наименование" type="xs:string"/>
+		<property xmlns:d3p1="http://FreeOrgInfo" name="Группа" type="d3p1:КлючевыеСвойстваКонтрагентГруппа" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваОрганизация" open="true" sequenced="true">
+		<property name="Наименование" type="xs:string"/>
+		<property name="НаименованиеСокращенное" type="xs:string" lowerBound="0"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0"/>
+		<property name="ИНН" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="12"/>
+		</property>
+		<property xmlns:d3p1="http://FreeOrgInfo" name="ГоловнаяОрганизация" type="d3p1:КлючевыеСвойстваОрганизация" lowerBound="0"/>
+		<property name="ВзаимозависимоеЛицо" type="xs:boolean"/>
+		<property name="РезидентОффшорнойЗоны" type="xs:boolean"/>
+		<property name="СделкаСТоварамиПоПеречню" type="xs:boolean"/>
+		<property name="КрупныйПлательщикНДС" type="xs:boolean"/>
+		<property name="КодФилиала" type="xs:string"/>
+		<property name="КодПоОКПО" type="xs:string"/>
+		<property xmlns:d3p1="http://FreeOrgInfo" name="ЮрФизЛицо" type="d3p1:ЮридическоеФизическоеЛицо"/>
+		<property name="НомерОсновногоСчета" type="xs:string"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваФизическоеЛицо" open="true" sequenced="true">
+		<property name="ФИО" type="xs:string" lowerBound="1"/>
+		<property name="ДатаРождения" type="xs:date" lowerBound="0"/>
+		<property name="КодВПрограмме" type="xs:string" lowerBound="0"/>
+		<property name="ИНН" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="12"/>
+		</property>
+	</objectType>
+	<objectType name="БанковскиеСчета" open="true" sequenced="true">
+		<property xmlns:d3p1="http://FreeOrgInfo" name="Строка" type="d3p1:БанковскиеСчета.Строка" lowerBound="0" upperBound="-1"/>
+		<property name="Версия" type="xs:date" form="Attribute"/>
+	</objectType>
+	<objectType name="Контрагенты" open="true" sequenced="true">
+		<property xmlns:d3p1="http://FreeOrgInfo" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваКонтрагентГруппа"/>
+		<property xmlns:d3p1="http://FreeOrgInfo" name="Группа" type="d3p1:КлючевыеСвойстваКонтрагентГруппа" lowerBound="0"/>
+		<property name="ОКПО" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="10"/>
+		</property>
+		<property name="ДополнительнаяИнформация" type="xs:string" lowerBound="0"/>
+		<property name="ДокументУдЛичность" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://FreeOrgInfo" name="КонтактнаяИнформация" type="d3p1:КонтактнаяИнформация" lowerBound="0"/>
+		<property xmlns:d3p1="http://FreeOrgInfo" name="СтранаРегистрации" type="d3p1:КлючевыеСвойстваСтранаМира" lowerBound="0"/>
+		<property name="ОбособленноеПодразделение" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="КонтрагентыГруппа" open="true" sequenced="true">
+		<property xmlns:d3p1="http://FreeOrgInfo" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваКонтрагентГруппа" lowerBound="0"/>
+	</objectType>
+	<objectType name="Организации" open="true" sequenced="true">
+		<property xmlns:d3p1="http://FreeOrgInfo" name="Организация" type="d3p1:Организация" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтраныМира" open="true" sequenced="true">
+		<property xmlns:d3p1="http://FreeOrgInfo" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваСтранаМира"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0"/>
+		<property name="КодАльфа2" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="2"/>
+		</property>
+		<property name="КодАльфа3" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="3"/>
+		</property>
+	</objectType>
+	<objectType name="ФизическиеЛица" open="true" sequenced="true">
+		<property xmlns:d3p1="http://FreeOrgInfo" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваФизическоеЛицо"/>
+		<property xmlns:d3p1="http://FreeOrgInfo" name="Пол" type="d3p1:Пол" lowerBound="0"/>
+		<property xmlns:d3p1="http://FreeOrgInfo" name="КонтактнаяИнформация" type="d3p1:КонтактнаяИнформация" lowerBound="0"/>
+	</objectType>
+	<objectType name="КонтактнаяИнформация">
+		<property xmlns:d3p1="http://FreeOrgInfo" name="Строка" type="d3p1:КонтактнаяИнформация.Строка" lowerBound="0" upperBound="-1"/>
+		<property name="Версия" type="xs:date" form="Attribute"/>
+	</objectType>
+	<objectType name="КонтактнаяИнформация.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://FreeOrgInfo" name="ВидКонтактнойИнформации" type="d3p1:ВидыКИ"/>
+		<property name="ЗначенияПолей" type="xs:string"/>
+		<property name="НаименованиеКонтактнойИнформации" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваСтранаМира" open="true" sequenced="true">
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType name="КонтактныеЛица.Строка" open="true" sequenced="true">
+		<property name="Должность" type="xs:string"/>
+		<property name="Фамилия" type="xs:string"/>
+		<property name="Имя" type="xs:string"/>
+		<property name="Отчество" type="xs:string"/>
+		<property name="Телефон" type="xs:string" nillable="true"/>
+		<property name="АдресЭлектроннойПочты" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="КонтактныеЛица">
+		<property xmlns:d3p1="http://FreeOrgInfo" name="Строка" type="d3p1:КонтактныеЛица.Строка" lowerBound="0" upperBound="-1"/>
+		<property name="Версия" type="xs:date" form="Attribute"/>
+	</objectType>
+	<objectType name="Организация" open="true" sequenced="true">
+		<property xmlns:d3p1="http://FreeOrgInfo" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваОрганизация"/>
+		<property xmlns:d3p1="http://FreeOrgInfo" name="КонтактнаяИнформация" type="d3p1:КонтактнаяИнформация" lowerBound="0"/>
+		<property xmlns:d3p1="http://FreeOrgInfo" name="КонтактныеЛица" type="d3p1:КонтактныеЛица" nillable="true"/>
+		<property xmlns:d3p1="http://FreeOrgInfo" name="БанковскиеСчета" type="d3p1:БанковскиеСчета" nillable="true"/>
+	</objectType>
+	<objectType name="БанковскиеСчета.Строка">
+		<property name="Закрыт" type="xs:boolean" lowerBound="0"/>
+		<property name="НомерСчета" type="xs:string"/>
+		<property name="БИК" type="xs:string"/>
+		<property name="КодВалюты" type="xs:string"/>
+		<property name="ТекстНазначения" type="xs:string" nillable="true" default=""/>
+		<property name="ТекстКорреспондента" type="xs:string" nillable="true" default=""/>
+	</objectType>
+</package>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62e68db9-bf1e-4c7d-ad68-f5d55056acf8">
+  <name>АдресныйКлассификатор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адресный классификатор</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

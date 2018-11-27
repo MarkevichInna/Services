@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49c2725c-ebb7-4f70-b749-11537a0d389b">
+  <name>ServiceActivation</name>
+  <synonym>
+    <key>ru</key>
+    <value>Service activation</value>
+  </synonym>
+  <comment></comment>
+  <rootURL>ServiceActivation</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="2cfeb154-38bd-4442-9821-3526d509c0bb">
+    <name>Activation</name>
+    <synonym>
+      <key>ru</key>
+      <value>Activation</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="f8a4529d-673b-41bf-bfb3-ccdc5aa0ba5d">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>ActivationPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

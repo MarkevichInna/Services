@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df7a2bb1-882c-43b2-ad64-58eb157d82b7">
+  <name>ServiceDeactivation</name>
+  <synonym>
+    <key>ru</key>
+    <value>Service deactivation</value>
+  </synonym>
+  <comment>ServiceDeactivation</comment>
+  <rootURL>ServiceDeactivation</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="0d653b68-d415-450c-af94-f1010bc3a075">
+    <name>Deactivation</name>
+    <synonym>
+      <key>ru</key>
+      <value>Deactivation</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="8b1b88a1-25ee-46dd-a564-93d11590576d">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>DeactivationPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

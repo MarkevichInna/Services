@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23fbd8d6-e1af-48b6-b240-87ebdc8e0850">
+  <name>СвободныйРеестрЮЛ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Свободный реестр ЮЛ</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.С_СвободныйРеестрСервер</content>
+  <content>InformationRegister.С_ВерсииБанковскихСчетов</content>
+  <content>InformationRegister.С_СвободныйРеестрЮричидескихЛиц</content>
+  <content>InformationRegister.С_ВерсииКонтактнойИнформации</content>
+  <content>InformationRegister.С_ВерсииКонтактов</content>
+  <parentSubsystem>Subsystem.Сервисы.Subsystem.Контрагенты</parentSubsystem>
+</mdclass:Subsystem>

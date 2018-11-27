@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d7515b3-bdf7-4cba-a005-3e23a30cce5b">
+  <name>КлассификаторВалют</name>
+  <synonym>
+    <key>ru</key>
+    <value>Классификатор валют</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.С_Валюты</content>
+  <content>InformationRegister.С_Валюты</content>
+  <parentSubsystem>Subsystem.Сервисы</parentSubsystem>
+</mdclass:Subsystem>

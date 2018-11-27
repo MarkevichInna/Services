@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e6cdbd5-5872-4f12-8889-eedd5104984c">
+  <producedTypes>
+    <objectType typeId="2ebd0deb-6acf-4281-a434-43655cffba76" valueTypeId="26313fc5-5ec7-494a-bd00-1de8c8b42dea"/>
+    <managerType typeId="fe0f70f3-b679-42d0-844b-f351f95675cc" valueTypeId="a84a4843-aabd-4030-ba0e-e66b53a71fd6"/>
+  </producedTypes>
+  <name>ОтчетНовыеПользователи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество уникальных пользователей по сервисам</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетНовыеПользователи.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <settingsStorage>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorage>
+  <forms uuid="634cf530-b195-4d11-9bf8-3d55d73140bf">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="52d62ae0-9004-4e7e-8625-fc7c7ac53706">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

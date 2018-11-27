@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fcf91361-7466-4702-bf9d-b6034a4a44ea">
+  <name>ServiceSearch</name>
+  <synonym>
+    <key>ru</key>
+    <value>Service search</value>
+  </synonym>
+  <comment></comment>
+  <rootURL>ServiceSearch</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="00b56e3e-eafd-4e87-8d4b-dcc182b9f675">
+    <name>Search</name>
+    <synonym>
+      <key>ru</key>
+      <value>Search</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="7d61f47d-98e7-40c7-80cd-fae4e1e93fd0">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>SearchPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="590e5b7a-e7db-4a90-9f0c-0a725a5e5217">
+  <producedTypes>
+    <objectType typeId="8cedb574-287d-4801-943c-638cbb82a9d1" valueTypeId="b824681c-c7d2-4213-b571-1a398b62a76f"/>
+    <refType typeId="da5c71be-5086-48af-a215-cd07e7af0a5d" valueTypeId="2e805b79-401c-4c46-9f4b-c99cdb06798d"/>
+    <selectionType typeId="10fce0fd-5e16-4c95-9566-e886d2c7e62e" valueTypeId="f9883493-2caf-491d-a4ad-2d9004b3a6c8"/>
+    <listType typeId="babcd429-4cb0-4573-b7a5-0f5cb81a6ef5" valueTypeId="f7fa990d-a0b8-4b4e-900d-0a6acc9f0ed0"/>
+    <managerType typeId="4c6b19df-5e22-450c-b8da-a191078e42a5" valueTypeId="aaed782a-78e7-4a01-a46b-ff3bbc9e8ba4"/>
+  </producedTypes>
+  <name>С_ИгнорируемыеУНП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Игнорируемые УНП</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.С_ИгнорируемыеУНП.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.С_ИгнорируемыеУНП.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="ead59f00-ea97-4814-bef8-a5c8669743ed">
+    <name>УНП</name>
+    <synonym>
+      <key>ru</key>
+      <value>УНП</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

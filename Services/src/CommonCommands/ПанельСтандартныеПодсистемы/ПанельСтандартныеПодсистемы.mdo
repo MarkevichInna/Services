@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="27ead54a-94a7-4809-b5c8-47e241b4cdfb">
+  <name>ПанельСтандартныеПодсистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты СтандартныеПодсистемы</value>
+  </synonym>
+  <comment></comment>
+  <group>NavigationPanelOrdinary</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Отчеты по журналу регистрации и другие отчеты для администрирования программы.</value>
+  </toolTip>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41a079e3-1e22-4c47-bf29-80499ec87ca9">
+  <name>АдресныйКлассификатор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адресный классификатор</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.С_АдресныйКлассификаторСервер</content>
+  <content>CommonModule.С_АдресныйКлассификаторВызовСервера</content>
+  <content>CommonModule.С_АдресныйКлассификаторКлиент</content>
+  <content>CommonModule.С_АдресныйКлассификаторКлиентСервер</content>
+  <content>CommonModule.С_АдресныйКлассификаторСлужебныйВМоделиСервиса</content>
+  <content>HTTPService.AddressClassifierRequest</content>
+  <content>WebService.AddressClassifierUpdate</content>
+  <content>XDTOPackage.AddressClassifierXDTO</content>
+  <content>CommonModule.С_ЗаполнениеАдресногоКлассификатораСервер</content>
+  <content>ScheduledJob.С_ОбновлениеАдресногоКлассификатора</content>
+  <content>CommonCommand.С_АдресныйКлассификатор</content>
+  <content>Constant.С_ДатаОбновленияАдресногоКлассификатора</content>
+  <content>Catalog.С_ОбновлениеАдресногоКлассификатора</content>
+  <content>InformationRegister.С_АдресныеСокращения</content>
+  <content>InformationRegister.С_АдресныйКлассификатор</content>
+  <content>InformationRegister.С_ВерсииОбъектовАдресногоКлассификатора</content>
+  <parentSubsystem>Subsystem.Сервисы</parentSubsystem>
+</mdclass:Subsystem>

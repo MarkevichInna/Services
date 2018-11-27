@@ -1,0 +1,14 @@
+﻿<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://globalservice.ws.bept.ids.by/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <glob:Login>
+         <!--Optional:-->
+         <request>
+            <!--Optional:-->
+            <password>id_password</password>
+            <!--Optional:-->
+            <username>id_username</username>
+         </request>
+      </glob:Login>
+   </soapenv:Body>
+</soapenv:Envelope>

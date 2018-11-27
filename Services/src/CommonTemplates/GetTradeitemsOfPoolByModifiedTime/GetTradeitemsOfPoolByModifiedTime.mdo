@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="285f0250-2f73-45e2-8910-0acf984cd2f8">
+  <name>GetTradeitemsOfPoolByModifiedTime</name>
+  <synonym>
+    <key>ru</key>
+    <value>Get tradeitems of pool by modified time</value>
+  </synonym>
+  <comment></comment>
+  <templateType>TextDocument</templateType>
+</mdclass:CommonTemplate>

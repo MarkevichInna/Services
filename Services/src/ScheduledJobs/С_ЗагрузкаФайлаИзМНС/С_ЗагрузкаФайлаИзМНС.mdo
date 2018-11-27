@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="80441125-e036-4f08-bf72-6d29d0a5e2e6">
+  <name>С_ЗагрузкаФайлаИзМНС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка файла МНС (для сервисов по контрагентам)</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.С_РегламентныеЗаданияСервер.ЗагрузкаФайлаИзМНС</methodName>
+  <description>Загрузка файла МНС (для сервисов по контрагентам)</description>
+  <key></key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

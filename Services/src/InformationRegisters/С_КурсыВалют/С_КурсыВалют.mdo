@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7246e91d-bca7-43dd-829f-be0c8effaf20">
+  <producedTypes>
+    <selectionType typeId="ef7bccbf-0d57-44aa-acc8-bc50809b029b" valueTypeId="dbf974c2-afd5-4330-98f4-0e71a215d5e1"/>
+    <listType typeId="53f2d78b-3440-4a83-9e2d-410f4b4199ed" valueTypeId="594a655a-38ad-4374-ab4e-1f1564f4ff92"/>
+    <managerType typeId="537ea4fe-73fe-4847-9a89-865891178219" valueTypeId="54407faf-8c26-48fa-a87e-c0323514d016"/>
+    <recordSetType typeId="1a5d848b-f27d-4350-aeb2-df21407540b2" valueTypeId="40fea88d-ca59-43e4-967b-6bb83bd77b12"/>
+    <recordKeyType typeId="72391943-c779-4f56-bbd3-17caeb9c5521" valueTypeId="8d4e2a22-a3de-4812-a09c-5a404ffccc64"/>
+    <recordType typeId="6ea5fd4f-3e05-4e88-8965-f51ed896eadc" valueTypeId="2a5593ac-dbc4-44c8-a87f-c97bef4a3c90"/>
+    <recordManagerType typeId="dd0dbec9-f1e0-449d-ba00-969a0bae4a68" valueTypeId="682398f4-7a41-4134-b16b-c4f433aa46dd"/>
+  </producedTypes>
+  <name>С_КурсыВалют</name>
+  <synonym>
+    <key>ru</key>
+    <value>Курсы валют</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6b9491db-eb29-4ce0-81ba-e3da147186e5">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>4</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Курс валюты</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+  </resources>
+  <resources uuid="2c966d44-1eb0-41cf-8be7-29370f842c98">
+    <name>Кратность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кратность</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Кратность валюты</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="86218550-8b3b-41ca-93ea-53b1530bc9ae">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.С_Валюты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

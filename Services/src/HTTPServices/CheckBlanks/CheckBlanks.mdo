@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e9d738d-e2f8-4111-8826-58334841445a">
+  <name>CheckBlanks</name>
+  <synonym>
+    <key>ru</key>
+    <value>Check blanks</value>
+  </synonym>
+  <comment></comment>
+  <rootURL>Blanks</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="e82ee3db-62b1-4e87-90c0-f4579af9c56c">
+    <name>Blanks</name>
+    <synonym>
+      <key>ru</key>
+      <value>Blanks</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="b8c1e42a-f344-4b7c-89fc-18fc57f1b392">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>BlanksPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

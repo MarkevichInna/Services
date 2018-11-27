@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6796326-9e0b-42b1-8e73-82d7164e0c30">
+  <producedTypes>
+    <selectionType typeId="66d67096-1d7a-44d2-a042-af12ba5185d6" valueTypeId="f7a01d00-332c-4270-aec4-beb973c14002"/>
+    <listType typeId="60f2734e-981d-453b-8476-6c11fd527fb8" valueTypeId="3806d07f-db5b-4293-a88c-5409f1c2a710"/>
+    <managerType typeId="272f0e3a-60a1-4513-b9a8-3ca5831112a0" valueTypeId="e36de564-effc-4896-b93b-e7a06754c60b"/>
+    <recordSetType typeId="e4a75d3d-a499-410e-b1a8-85bc8fcdfeb0" valueTypeId="16608a1e-f079-4995-a242-513a6aa0246d"/>
+    <recordKeyType typeId="e0384739-03eb-4810-8009-4249b03e9c81" valueTypeId="e84aa509-3a8c-4baa-b099-46a0602546e4"/>
+    <recordType typeId="5ab08e9b-92eb-4cb8-8676-e35be45c49dc" valueTypeId="05e4665b-98df-40a9-b40d-7c0454613326"/>
+    <recordManagerType typeId="6c2d2ac2-b9be-4636-ba93-f938dfeff714" valueTypeId="9725ea13-9560-44aa-beac-db98f82759a3"/>
+  </producedTypes>
+  <name>БезопасноеХранилищеДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Безопасное хранилище данных</value>
+  </synonym>
+  <comment></comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4bfa20c1-c53b-419e-9ef1-34e1143f036f">
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cac06578-8f41-4a9b-be8a-312fd67d897a">
+    <name>Владелец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <types>ExchangePlanRef</types>
+      <types>CatalogRef</types>
+      <stringQualifiers>
+        <length>128</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,59 @@
+﻿<ValueTable xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTable">
+
+	<column>
+		<Name xsi:type="xs:string">КодСубъектаРФ</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+		</ValueType>
+	</column>
+	
+	<column>
+		<Name xsi:type="xs:string">Наименование</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>120</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	
+	<column>
+		<Name xsi:type="xs:string">Сокращение</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>10</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	
+	<column>
+		<Name xsi:type="xs:string">ПочтовыйИндекс</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+		</ValueType>
+	</column>
+	
+	<column>
+		<Name xsi:type="xs:string">Идентификатор</Name>
+		<ValueType>
+			<Type>UUID</Type>
+		</ValueType>
+	</column>
+
+	<index><column>КодСубъектаРФ</column></index>
+	<index><column>Наименование</column></index>
+	<index><column>Наименование</column><column>Сокращение</column></index>
+	<index><column>Идентификатор</column></index>
+
+	<row><Value>01</Value><Value>Брестская</Value>                                  <Value>обл.</Value>   <Value>385000</Value><Value>d8327a56-80de-4df2-815c-4f6ab1224c50</Value></row>
+	<row><Value>02</Value><Value>Витебская</Value>                            <Value>обл.</Value>   <Value>450000</Value><Value>6f2cbfd8-692a-4ee4-9b16-067210bde3fc</Value></row>
+	<row><Value>03</Value><Value>Гомельская</Value>                                 <Value>обл.</Value>   <Value>670000</Value><Value>a84ebed3-153d-4ba9-8532-8bdf879e1f5a</Value></row>
+	<row><Value>04</Value><Value>Гродненская</Value>                                   <Value>обл.</Value>   <Value>649000</Value><Value>5c48611f-5de6-4771-9695-7e36a4e7529d</Value></row>
+	<row><Value>05</Value><Value>Минск</Value>                                <Value> </Value>    <Value>368000</Value><Value>0bb7fa19-736d-49cf-ad0e-9774c4dae09b</Value></row>
+	<row><Value>06</Value><Value>Минская</Value>                               <Value>обл.</Value>    <Value>386000</Value><Value>b2d8cd20-cabc-4deb-afad-f3c4b4d55821</Value></row>
+	<row><Value>07</Value><Value>Могилевская</Value>                     <Value>обл.</Value>    <Value>000000</Value><Value>1781f74e-be4a-4697-9c6b-493057c94818</Value></row>
+
+</ValueTable>

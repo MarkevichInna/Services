@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f5274691-5002-44b2-92d7-ebbe2b43f79a">
+  <producedTypes>
+    <selectionType typeId="f4427a65-b51e-4129-aceb-b7641f14a468" valueTypeId="448bfc06-e67a-4353-9c28-76ac0eecacb1"/>
+    <listType typeId="6ad094b1-07cd-4c22-a483-346766df1d09" valueTypeId="1cc86ddc-a53f-4074-a3f6-41b41475ce99"/>
+    <managerType typeId="a1f6b372-3ee9-4b55-8639-de230f4a36f7" valueTypeId="07332862-3eda-43d1-87c8-dc2a646d0ae3"/>
+    <recordSetType typeId="b6c4df4e-0d84-4f3e-b355-f89b7d457f47" valueTypeId="e23da53c-d3c3-4c1f-9272-4038d108f367"/>
+    <recordKeyType typeId="63463907-4768-4d59-9e74-e7a544546818" valueTypeId="afe30633-6b79-4814-aa69-2cff4f42a285"/>
+    <recordType typeId="36e1d1b5-cc3b-496f-9201-4c698f8070f2" valueTypeId="5aa21e34-79ac-43d1-b468-382067515e48"/>
+    <recordManagerType typeId="fdc269f9-05fe-48a8-b82f-497f198a9efe" valueTypeId="3f5acad8-54c9-4720-a3ee-69c405cf9da6"/>
+  </producedTypes>
+  <name>С_РеестрПравонарушений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реестр предприятий правонарушений</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="594d648c-14de-4645-be17-e8c68c820623">
+    <name>УНП</name>
+    <synonym>
+      <key>ru</key>
+      <value>УНП</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

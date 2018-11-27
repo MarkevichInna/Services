@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e682300c-7b7e-42a3-b063-b4de8edc4bec">
+  <producedTypes>
+    <objectType typeId="95aacdd6-ec27-4834-92c5-92401f54ab79" valueTypeId="8f7db257-91f0-4b28-88c6-0462d8bf351b"/>
+    <managerType typeId="1e1a0e3b-f7b7-41fa-94e7-c21ad4653540" valueTypeId="22d2037d-f3be-4867-adee-552578c4f630"/>
+  </producedTypes>
+  <name>РегламентныеИФоновыеЗадания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регламентные и фоновые задания</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РегламентныеИФоновыеЗадания.Form.РегламентныеИФоновыеЗадания</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <forms uuid="b60d288c-f75f-44a4-ae51-0908317225ae">
+    <name>РегламентныеИФоновыеЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентные и фоновые задания</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e378071d-d4a8-443c-8f65-b4638ceffaa6">
+    <name>ФоновоеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фоновое задание</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ffd1a392-04bf-4f37-862b-3940990c9ba0">
+    <name>РегламентноеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентное задание</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="1f7d908c-5c7a-4369-886a-daf540acfbbe">
+    <name>РегламентныеИФоновыеЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентные и фоновые задания</value>
+    </synonym>
+    <comment></comment>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

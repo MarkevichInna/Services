@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f0b63c4-e269-419f-b91f-da6fdc1a8109">
+  <name>GetServices</name>
+  <synonym>
+    <key>ru</key>
+    <value>Get services</value>
+  </synonym>
+  <comment></comment>
+  <rootURL>GetServices</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="c18f9690-7e8b-4fe7-a4dc-45e06c8af4bc">
+    <name>GetServices</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get services</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="b089ebbd-7f04-448b-b8a0-8bdf7b44a26b">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>GetServicesPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

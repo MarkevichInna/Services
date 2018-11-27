@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43c63068-39fd-4cfb-93ba-01f35883c6fe">
+  <producedTypes>
+    <objectType typeId="51c2fb5c-4a50-4782-9aae-50a7d687a006" valueTypeId="64e33980-b7ca-43f7-b6e1-2c27e8f0fd0d"/>
+    <refType typeId="031c2fba-b053-4474-a376-3749594c112e" valueTypeId="dc1446bf-3d5b-4f4c-85c7-d4d4e5e3825a"/>
+    <selectionType typeId="3c5b61f2-691a-42e4-9544-82f4a0ba26cc" valueTypeId="97bd1ab9-1860-47d5-ab7b-beea0a058aac"/>
+    <listType typeId="cf460a92-5249-4f42-9ea7-d9f3c2b086a6" valueTypeId="e7851fda-b21c-47f4-98b8-9d47645bc8cd"/>
+    <managerType typeId="a183bc19-63eb-464d-b831-e5d3ec07b20c" valueTypeId="1b983585-d470-4f80-84c8-50d8e5b5c5d0"/>
+  </producedTypes>
+  <name>С_Партнеры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Партнеры</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.С_Партнеры.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.С_Партнеры.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>12</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.С_Партнеры.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="000db463-ddcc-4e76-93da-5901597b8326">
+    <name>PARTNERCODE</name>
+    <synonym>
+      <key>ru</key>
+      <value>PARTNERCODE</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="135bccfe-2939-44cb-b7a2-41155e4deeab">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,17 @@
+﻿<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://globalservice.ws.bept.ids.by/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <glob:getTradeitemByGTIN>
+         <!--Optional:-->
+         <request>
+            <!--Optional:-->
+            <gtin>id_gtin</gtin>
+            <!--Optional:-->
+            <header>
+               <!--Optional:-->
+               <sessiontoken>id_sessiontoken</sessiontoken>
+            </header>
+         </request>
+      </glob:getTradeitemByGTIN>
+   </soapenv:Body>
+</soapenv:Envelope>

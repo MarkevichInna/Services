@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec28b425-cb95-4ab8-8ffc-bc733e82cfc9">
+  <name>Прочее</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прочее</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.ЗагрузкаВерсийКонфигураций</content>
+  <parentSubsystem>Subsystem.Сервисы</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c38e985-6c67-4d37-ac99-d7bf1a18d693">
+  <name>OffContractorsXDTO</name>
+  <synonym>
+    <key>ru</key>
+    <value>Off contractors XDTO</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://www.OffContractorsUpdate</namespace>
+</mdclass:XDTOPackage>

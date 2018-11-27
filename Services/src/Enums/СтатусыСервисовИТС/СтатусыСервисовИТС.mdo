@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6752ba6f-ce3e-4f3e-bfda-be3e15f129cc">
+  <producedTypes>
+    <refType typeId="91f71975-d14e-4ff8-900e-42cf2101eea9" valueTypeId="05bda466-938d-4563-ab10-f95b39cc01c8"/>
+    <listType typeId="d0d7cf02-0e62-4431-a766-5bf719830e0a" valueTypeId="33413c72-18e8-4883-a736-5f9abc520146"/>
+    <managerType typeId="c70e21ee-c0b9-4938-b2ee-c6c73ad4af76" valueTypeId="bed30ce1-8371-477b-9fdf-cdeca386352e"/>
+  </producedTypes>
+  <name>СтатусыСервисовИТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы сервисов ИТС</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="51dd976f-5d65-4b6e-8f46-21bdd3a06342">
+    <name>Активирован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активирован</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="7fcb78db-27c4-4b1f-b344-03b0e1bf0f94">
+    <name>Удален</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удален</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="00f4f0e7-58a6-4cde-920c-2ce35e8b9586">
+    <name>Деактивирован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Деактивирован</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="4a02d49f-bbed-437c-82dc-b20d32a71384">
+    <name>Принято</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принято</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

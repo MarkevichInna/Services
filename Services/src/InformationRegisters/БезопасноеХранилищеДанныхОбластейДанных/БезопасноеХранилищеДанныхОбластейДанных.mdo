@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="80f5cc9c-8dd6-4157-8590-13e4c99fac5e">
+  <producedTypes>
+    <selectionType typeId="ccdbfc23-e157-4d3f-8f29-f5bf34809c39" valueTypeId="4db2f3cb-98c1-48a0-8cb7-fe0774d25d0a"/>
+    <listType typeId="55d11d8f-4447-434c-807f-2e440f90cd89" valueTypeId="56d398c9-baf8-40cd-b4bd-742a4258aa09"/>
+    <managerType typeId="f9712897-cd19-4b6c-8568-8db58d3fc2bc" valueTypeId="c65f2f31-7290-4b14-9e25-28bad98f71e4"/>
+    <recordSetType typeId="1a0b3299-346e-4460-aa6a-5aa97b928442" valueTypeId="8a53510f-12dc-4fb5-855d-bc5bcc34ca61"/>
+    <recordKeyType typeId="78921a69-d71b-483f-9e12-9cb1b6dc3be2" valueTypeId="ce409086-7efb-4d81-8967-8825c4ad46db"/>
+    <recordType typeId="7edea25b-4381-428e-842f-2ffe21aeb914" valueTypeId="f0a48e03-e460-45b9-bb5d-dcfe5358bd62"/>
+    <recordManagerType typeId="2e7fc0d2-ef54-4813-a865-6fdddff50f3a" valueTypeId="2d6e3036-45a9-4ece-9d85-fe7285d76d13"/>
+  </producedTypes>
+  <name>БезопасноеХранилищеДанныхОбластейДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Безопасное хранилище данных областей данных</value>
+  </synonym>
+  <comment></comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fcd35724-2413-4780-a130-72953705c1e3">
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8e2a3181-cfa6-4b5b-8973-ae1c0d799055">
+    <name>Владелец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <types>ExchangePlanRef</types>
+      <types>CatalogRef</types>
+      <stringQualifiers>
+        <length>128</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f496fdc5-3544-4bb3-9303-d500640d72aa">
+  <name>ПользователиСервисов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пользователи сервисов</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.С_ПользователиСервисов</content>
+  <content>CommonCommand.ПанельОтчетовАдминистрирование</content>
+  <content>Report.СведенияОПользователях</content>
+  <content>InformationRegister.С_РегистрацияДействийПользователей_СрезПервых</content>
+  <content>CommonModule.С_ПользователиСервисов</content>
+  <content>Constant.С_ВестиЛогПользователей</content>
+  <content>InformationRegister.С_РегистрацияДействийПользователей</content>
+  <parentSubsystem>Subsystem.Сервисы</parentSubsystem>
+</mdclass:Subsystem>

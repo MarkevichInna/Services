@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b42b71c1-ed2a-4670-aa7f-576e211f507a">
+  <producedTypes>
+    <managerType typeId="4f3def6d-7bd4-4227-8498-96ae74dcc360" valueTypeId="c2a65a27-ee5c-4a6a-bf12-7e22e18555f4"/>
+    <valueManagerType typeId="ee38766c-32ea-40b0-b243-c7afa47691ac" valueTypeId="74ef97ba-81e6-4ff1-a565-e00dc66e71cc"/>
+  </producedTypes>
+  <name>С_ДатаОбновленияАдресногоКлассификатора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата обновления адресного классификатора</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

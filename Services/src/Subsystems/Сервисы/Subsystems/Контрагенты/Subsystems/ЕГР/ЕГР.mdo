@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a74bb4db-552d-4ce2-9705-4c0688bd4bc6">
+  <name>ЕГР</name>
+  <synonym>
+    <key>ru</key>
+    <value>ЕГР</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.С_ОбновлениеРегистраЕГРСервер</content>
+  <content>ScheduledJob.С_ОбновлениеРегистраЕГР</content>
+  <content>InformationRegister.С_ЕГР</content>
+  <parentSubsystem>Subsystem.Сервисы.Subsystem.Контрагенты</parentSubsystem>
+</mdclass:Subsystem>

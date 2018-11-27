@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4fa024b-ce63-4cf7-904f-8bd3b79720a1">
+  <name>CurrRatesRequest</name>
+  <comment></comment>
+  <rootURL>CurrRates</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="5310726d-2d8e-466f-8fd4-d14950b2266a">
+    <name>CurrRates</name>
+    <synonym>
+      <key>ru</key>
+      <value>Curr rates</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="69258013-6504-4a95-a7fa-64d4936218f3">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>POSTRequest</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

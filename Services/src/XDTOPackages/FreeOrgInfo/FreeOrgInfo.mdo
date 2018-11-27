@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b2c960b-daaa-42f9-875d-a6cabe3591f9">
+  <name>FreeOrgInfo</name>
+  <synonym>
+    <key>ru</key>
+    <value>FreeOrgInfo</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://FreeOrgInfo</namespace>
+</mdclass:XDTOPackage>

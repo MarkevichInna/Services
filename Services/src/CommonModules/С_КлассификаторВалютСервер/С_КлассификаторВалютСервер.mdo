@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9adcc3db-f561-47e1-b9f3-ee8ca7865ab0">
+  <name>С_КлассификаторВалютСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>С классификатор валют сервер</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+</mdclass:CommonModule>

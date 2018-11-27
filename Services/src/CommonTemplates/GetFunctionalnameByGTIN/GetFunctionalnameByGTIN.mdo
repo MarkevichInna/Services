@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3f51aca-6c40-4da9-94c3-e70d19c869d3">
+  <name>GetFunctionalnameByGTIN</name>
+  <synonym>
+    <key>ru</key>
+    <value>Get functionalname by GTIN</value>
+  </synonym>
+  <comment></comment>
+  <templateType>TextDocument</templateType>
+</mdclass:CommonTemplate>

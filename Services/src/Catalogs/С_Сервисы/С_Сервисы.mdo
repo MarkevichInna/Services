@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="269217b6-b982-426e-b72b-b8736f5925c9">
+  <producedTypes>
+    <objectType typeId="b25b989a-42b1-4c07-8fcf-29a2d0b96a5f" valueTypeId="662cdbca-de16-4fae-a660-051a4cad2fe9"/>
+    <refType typeId="1afb51a5-c665-4206-8fe5-9344a101f7a1" valueTypeId="05472a88-8dc6-4633-80f4-7890af3afa0e"/>
+    <selectionType typeId="f8e853ec-6d87-471b-92b4-632bd5b05990" valueTypeId="ce95f3e1-bc31-43e5-b85a-c464cf1d7f5d"/>
+    <listType typeId="7c710e65-068b-4b92-8084-37560b54778f" valueTypeId="3d0ee1db-1825-46bc-8629-e72d79b8d419"/>
+    <managerType typeId="48527595-6f0b-419d-8cef-84f9e42158f2" valueTypeId="58367a74-b232-4b1f-a8fb-9208219fab8c"/>
+  </producedTypes>
+  <name>С_Сервисы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервисы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.С_Сервисы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.С_Сервисы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="06954cac-d0c1-48cd-b4b0-8aa9408f0199">
+      <name>All</name>
+      <description>All</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+    <items id="a76320b5-2d1a-46ba-a370-5221219440d1">
+      <name>CurrClassifier</name>
+      <description>Curr classifier</description>
+      <code xsi:type="core:StringValue">
+        <value>000000014</value>
+      </code>
+    </items>
+    <items id="d03864a3-b954-4d82-9e0b-cfd4537ac84c">
+      <name>DirectBank</name>
+      <description>Direct bank</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="0095d573-d4bd-441a-8a8b-35f753266b3d">
+      <name>AddressClassifier</name>
+      <description>Адресный классификатор</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="72b6685e-480f-4e1c-9760-55962006dd62">
+      <name>Bankrupt</name>
+      <description>Банкроты</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="33ae264d-d502-470c-bf5e-f28945604244">
+      <name>Blanks</name>
+      <description>БСО</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="bf2f409a-25bf-4c7b-bbe1-4ac037cba6ea">
+      <name>Map</name>
+      <description>Карты</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="43fde8db-db8f-4332-b698-f84ff7507440">
+      <name>BanksClassifier</name>
+      <description>Классификатор банков</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="25f054ca-2525-48ff-96ec-4f40143ae394">
+      <name>CurrRates</name>
+      <description>Курсы валют</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="eba2304b-d69a-4f8e-b43f-821b0ace2172">
+      <name>ITS</name>
+      <description>Не пройдена проверка ИТС</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="b1501827-a2c5-429f-b13a-681b9483fdd8">
+      <name>OffContractors</name>
+      <description>Реестр предприятий с повышенным риском совершения</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="9ab601cf-ba3c-4221-bed1-a493468c3649">
+      <name>OrgInfo</name>
+      <description>Свободный реестр (организация)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="83bbf139-22b1-43df-af3f-4357611659fb">
+      <name>KontrInfo</name>
+      <description>Свободный реестр ЮЛ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="5507e669-588d-4ec8-89d9-ad36aa445d9c">
+      <name>Einvoices</name>
+      <description>ЭСЧФ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.С_Сервисы.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="812ddb26-6a2a-4cb6-8ae3-2c5a0b3cb7c8">
+    <name>БесплатныйСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бесплатный сервис</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="034e095f-8f32-4a08-9b7e-45f4a90b0e8f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

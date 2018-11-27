@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="071aa471-ee3b-4b87-8d96-a62ca4050d75">
+  <name>Login</name>
+  <synonym>
+    <key>ru</key>
+    <value>Login</value>
+  </synonym>
+  <comment></comment>
+  <templateType>TextDocument</templateType>
+</mdclass:CommonTemplate>

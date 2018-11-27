@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="360f2c93-0d53-4595-9be3-c8d93a559e5d">
+  <name>КлассификаторБанков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Классификатор банков</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+</mdclass:CommonModule>

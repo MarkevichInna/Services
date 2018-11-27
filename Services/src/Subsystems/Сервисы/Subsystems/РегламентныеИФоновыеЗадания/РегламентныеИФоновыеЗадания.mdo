@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5181824a-81ef-4ee2-a31a-a51b64e2c4ea">
+  <name>РегламентныеИФоновыеЗадания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регламентные и фоновые задания</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.РегламентныеИФоновыеЗадания</content>
+  <content>CommonCommand.ПанельОтчетовАдминистрирование</content>
+  <parentSubsystem>Subsystem.Сервисы</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,2429 @@
+﻿<xs:schema xmlns:tns="http://globalservice.ws.bept.ids.by/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://globalservice.ws.bept.ids.by/" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:element name="getClassificatorResponse" type="tns:getClassificatorResponse"/>
+	<xs:element name="getVariantByGTIN" type="tns:getVariantByGTIN"/>
+	<xs:element name="getFunctionalnameByGTIN" type="tns:getFunctionalnameByGTIN"/>
+	<xs:element name="getTradeitemsOfPoolByModifiedTime" type="tns:getTradeitemsOfPoolByModifiedTime"/>
+	<xs:element name="Logout" type="tns:Logout"/>
+	<xs:element name="SearchTradeitemsByGLNResponse" type="tns:SearchTradeitemsByGLNResponse"/>
+	<xs:element name="SearchTradeitemsByModifiedTime" type="tns:SearchTradeitemsByModifiedTime"/>
+	<xs:element name="SearchTradeitemsByModifiedTimeResponse" type="tns:SearchTradeitemsByModifiedTimeResponse"/>
+	<xs:element name="getOldPartyResponse" type="tns:getOldPartyResponse"/>
+	<xs:element name="getCurrentTime" type="tns:getCurrentTime"/>
+	<xs:element name="LogoutResponse" type="tns:LogoutResponse"/>
+	<xs:element name="cleanTradeitemsOfPoolByDeleteTime" type="tns:cleanTradeitemsOfPoolByDeleteTime"/>
+	<xs:element name="SearchSimpleTradeitemsByModifiedTimeResponse" type="tns:SearchSimpleTradeitemsByModifiedTimeResponse"/>
+	<xs:element name="getSimpleTradeitemsByGTINResponse" type="tns:getSimpleTradeitemsByGTINResponse"/>
+	<xs:element name="getPartyByGLN" type="tns:getPartyByGLN"/>
+	<xs:element name="SearchTradeitemsByOKRB007Response" type="tns:SearchTradeitemsByOKRB007Response"/>
+	<xs:element name="getOldHeaderReqResponse" type="tns:getOldHeaderReqResponse"/>
+	<xs:element name="getTradeitemsByGTINs" type="tns:getTradeitemsByGTINs"/>
+	<xs:element name="getClassificator" type="tns:getClassificator"/>
+	<xs:element name="SearchSimpleTradeitemsByModifiedTime" type="tns:SearchSimpleTradeitemsByModifiedTime"/>
+	<xs:element name="getTradeitemByGTINResponse" type="tns:getTradeitemByGTINResponse"/>
+	<xs:element name="cleanTradeitemsOfPoolByDeleteTimeResponse" type="tns:cleanTradeitemsOfPoolByDeleteTimeResponse"/>
+	<xs:element name="LoginResponse" type="tns:LoginResponse"/>
+	<xs:element name="SearchTradeitemsByGLNAndModifiedTime" type="tns:SearchTradeitemsByGLNAndModifiedTime"/>
+	<xs:element name="getOldHeaderRespResponse" type="tns:getOldHeaderRespResponse"/>
+	<xs:element name="getCurrentTimeResponse" type="tns:getCurrentTimeResponse"/>
+	<xs:element name="getFullPartyByGLNResponse" type="tns:getFullPartyByGLNResponse"/>
+	<xs:element name="getFunctionalnameByGTINResponse" type="tns:getFunctionalnameByGTINResponse"/>
+	<xs:element name="getSimpleTradeitemsByGTIN" type="tns:getSimpleTradeitemsByGTIN"/>
+	<xs:element name="getTIImageKindsByGTINsResponse" type="tns:getTIImageKindsByGTINsResponse"/>
+	<xs:element name="Login" type="tns:Login"/>
+	<xs:element name="SearchTradeitemsByTNVEDResponse" type="tns:SearchTradeitemsByTNVEDResponse"/>
+	<xs:element name="tradeitem" type="tns:tradeitem"/>
+	<xs:element name="SearchTradeitemsByOKRB007" type="tns:SearchTradeitemsByOKRB007"/>
+	<xs:element name="SearchPartiesByModifiedTimeResponse" type="tns:SearchPartiesByModifiedTimeResponse"/>
+	<xs:element name="getOldTradeitem" type="tns:getOldTradeitem"/>
+	<xs:element name="getFullPartyByGLN" type="tns:getFullPartyByGLN"/>
+	<xs:element name="getOldHeaderReq" type="tns:getOldHeaderReq"/>
+	<xs:element name="getTradeitemsOfPoolByModifiedTimeResponse" type="tns:getTradeitemsOfPoolByModifiedTimeResponse"/>
+	<xs:element name="SearchPartiesByModifiedTime" type="tns:SearchPartiesByModifiedTime"/>
+	<xs:element name="getTIImageKindsByGTINs" type="tns:getTIImageKindsByGTINs"/>
+	<xs:element name="SearchTradeitemsByTNVED" type="tns:SearchTradeitemsByTNVED"/>
+	<xs:element name="SearchTradeitemsByName" type="tns:SearchTradeitemsByName"/>
+	<xs:element name="SearchTradeitemsByGLN" type="tns:SearchTradeitemsByGLN"/>
+	<xs:element name="getOldParty" type="tns:getOldParty"/>
+	<xs:element name="SearchTradeitemsByGLNAndModifiedTimeResponse" type="tns:SearchTradeitemsByGLNAndModifiedTimeResponse"/>
+	<xs:element name="getPartyByGLNResponse" type="tns:getPartyByGLNResponse"/>
+	<xs:element name="getOldTradeitemResponse" type="tns:getOldTradeitemResponse"/>
+	<xs:element name="SearchTradeitemsByNameResponse" type="tns:SearchTradeitemsByNameResponse"/>
+	<xs:element name="getTradeitemsByGTINsResponse" type="tns:getTradeitemsByGTINsResponse"/>
+	<xs:element name="getTradeitemByGTIN" type="tns:getTradeitemByGTIN"/>
+	<xs:element name="getOldHeaderResp" type="tns:getOldHeaderResp"/>
+	<xs:element name="getVariantByGTINResponse" type="tns:getVariantByGTINResponse"/>
+	<xs:complexType name="Login">
+		<xs:sequence>
+			<xs:element name="request" type="tns:loginReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LoginResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:loginResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Logout">
+		<xs:sequence>
+			<xs:element name="request" type="tns:logoutReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LogoutResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:logoutResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchPartiesByModifiedTime">
+		<xs:sequence>
+			<xs:element name="request" type="tns:searchPartiesByModifiedTimeReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchPartiesByModifiedTimeResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:searchPartiesByModifiedTimeResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchSimpleTradeitemsByModifiedTime">
+		<xs:sequence>
+			<xs:element name="request" type="tns:searchSimpleTradeitemsByModifiedTimeReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchSimpleTradeitemsByModifiedTimeResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:searchSimpleTradeitemsByModifiedTimeResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchTradeitemsByGLN">
+		<xs:sequence>
+			<xs:element name="request" type="tns:searchTradeitemsByGLNReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchTradeitemsByGLNAndModifiedTime">
+		<xs:sequence>
+			<xs:element name="request" type="tns:searchTradeitemsByGLNAndModifiedTimeReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchTradeitemsByGLNAndModifiedTimeResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:searchTradeitemsByGLNAndModifiedTimeResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchTradeitemsByGLNResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:searchTradeitemsByGLNResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchTradeitemsByModifiedTime">
+		<xs:sequence>
+			<xs:element name="request" type="tns:searchTradeitemsByModifiedTimeReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchTradeitemsByModifiedTimeResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:searchTradeitemsByModifiedTimeResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchTradeitemsByName">
+		<xs:sequence>
+			<xs:element name="request" type="tns:searchTradeitemsByNameReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchTradeitemsByNameResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:searchTradeitemsByNameResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchTradeitemsByOKRB007">
+		<xs:sequence>
+			<xs:element name="request" type="tns:searchTradeitemsByOKRB007Req" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchTradeitemsByOKRB007Response">
+		<xs:sequence>
+			<xs:element name="return" type="tns:searchTradeitemsByOKRB007Resp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchTradeitemsByTNVED">
+		<xs:sequence>
+			<xs:element name="request" type="tns:searchTradeitemsByTNVEDReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SearchTradeitemsByTNVEDResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:searchTradeitemsByTNVEDResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="alternatepartyidentification">
+		<xs:sequence>
+			<xs:element name="alternatepartyidentificationPK" type="tns:alternatepartyidentificationPK" minOccurs="0"/>
+			<xs:element name="party" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="alternatepartyidentificationPK">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long"/>
+			<xs:element name="additionalpartyidentification" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="apiHeaderEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INTERNAL_ERROR"/>
+			<xs:enumeration value="SESSION_EXPIRED"/>
+			<xs:enumeration value="INVALID_HEADER"/>
+			<xs:enumeration value="INVALID_SESSIONTOKEN"/>
+			<xs:enumeration value="NO_SESSION"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="apiHeaderRequest">
+		<xs:sequence>
+			<xs:element name="sessiontoken" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="apiHeaderResponse">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:apiHeaderEnum" minOccurs="0"/>
+			<xs:element name="sessiontoken" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="audioVideoConnector">
+		<xs:sequence>
+			<xs:element name="audioVideoConnectorPK" type="tns:audioVideoConnectorPK" minOccurs="0"/>
+			<xs:element name="avconnectiontypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="avconnectionlocationcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="avconnectioninputdirectioncode" type="xs:string" minOccurs="0"/>
+			<xs:element name="avconnectionquantity" type="xs:int" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="audioVideoConnectorPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="avconnectionuuid" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="audioVideoPhoto">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="hdmitestingagency" type="xs:string" minOccurs="0"/>
+			<xs:element name="supportedhdmifeature" type="xs:string" minOccurs="0"/>
+			<xs:element name="availablechannelstationquantit" type="xs:int" minOccurs="0"/>
+			<xs:element name="electronicprogrammingguidedays" type="xs:int" minOccurs="0"/>
+			<xs:element name="signalprocessingtypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="tunertypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="detachablespeakertypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="fixedspeakerlocationcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="surroundsounddigitaldecodertyp" type="xs:string" minOccurs="0"/>
+			<xs:element name="totalaudiopoweroutput" type="xs:string" minOccurs="0"/>
+			<xs:element name="availablebrightnessvalues" type="xs:string" minOccurs="0"/>
+			<xs:element name="combfiltertechnologytypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="dynamiccontrastratio" type="xs:int" minOccurs="0"/>
+			<xs:element name="multipicturedisplaycapability" type="xs:string" minOccurs="0"/>
+			<xs:element name="screenrefreshrate" type="xs:int" minOccurs="0"/>
+			<xs:element name="staticcontrastratio" type="xs:int" minOccurs="0"/>
+			<xs:element name="televisioninformationservice" type="xs:string" minOccurs="0"/>
+			<xs:element name="tvtextmemorypagequantity" type="xs:int" minOccurs="0"/>
+			<xs:element name="displayscreentypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="horizontalviewingangle" type="xs:int" minOccurs="0"/>
+			<xs:element name="verticalviewingangle" type="xs:int" minOccurs="0"/>
+			<xs:element name="aspectratiodescriptioncode" type="xs:string" minOccurs="0"/>
+			<xs:element name="aspectratiodimensioncode" type="xs:string" minOccurs="0"/>
+			<xs:element name="tradeiteminstallationoption" type="xs:string" minOccurs="0"/>
+			<xs:element name="vesawallmounttypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="remotecontroltypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="externalmemorytypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="internalmemorytypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="charactermeasurebrightness" type="xs:string" minOccurs="0"/>
+			<xs:element name="availablebrightnessmeasurement" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="bankaccounts">
+		<xs:sequence>
+			<xs:element name="accountid" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="bankid" type="xs:integer" minOccurs="0"/>
+			<xs:element name="accountnumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="accountname" type="xs:string" minOccurs="0"/>
+			<xs:element name="iban" type="xs:string" minOccurs="0"/>
+			<xs:element name="banksCollection" type="tns:banks" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="gln" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="banks">
+		<xs:sequence>
+			<xs:element name="banksPK" type="tns:banksPK" minOccurs="0"/>
+			<xs:element name="bankid" type="xs:integer" minOccurs="0"/>
+			<xs:element name="bankname" type="xs:string" minOccurs="0"/>
+			<xs:element name="bankaddress" type="xs:string" minOccurs="0"/>
+			<xs:element name="bic" type="xs:string" minOccurs="0"/>
+			<xs:element name="bankbranchcode" type="xs:short" minOccurs="0"/>
+			<xs:element name="bankaccounts" type="tns:bankaccounts" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="banksPK">
+		<xs:sequence>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+			<xs:element name="accountid" type="xs:decimal" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="barcodetype">
+		<xs:sequence>
+			<xs:element name="barcodetypePK" type="tns:barcodetypePK" minOccurs="0"/>
+			<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="barcodetypePK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="barcodetype" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="brandname">
+		<xs:sequence>
+			<xs:element name="brandnamePK" type="tns:brandnamePK" minOccurs="0"/>
+			<xs:element name="brandname" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="brandnamePK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="catalogueprice">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="effectivestartdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="effectiveenddate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="value" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="currency" type="xs:string" minOccurs="0"/>
+			<xs:element name="tradeitempricebasisquantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="tipbquom" type="xs:string" minOccurs="0"/>
+			<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="chiefname">
+		<xs:sequence>
+			<xs:element name="chiefnamePK" type="tns:chiefnamePK" minOccurs="0"/>
+			<xs:element name="chiefname" type="xs:string" minOccurs="0"/>
+			<xs:element name="party" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="chiefnamePK">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="childtradeitem">
+		<xs:sequence>
+			<xs:element name="childtradeitemPK" type="tns:childtradeitemPK" minOccurs="0"/>
+			<xs:element name="quantityofnextlowerlevelti" type="xs:long" minOccurs="0"/>
+			<xs:element name="nextlowerleveltiinformation" type="tns:nextlowerleveltiinformation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="childtradeitemPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="gtinofnextlowerlevelti" type="xs:long"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="city">
+		<xs:sequence>
+			<xs:element name="cityPK" type="tns:cityPK" minOccurs="0"/>
+			<xs:element name="city" type="xs:string" minOccurs="0"/>
+			<xs:element name="party" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="cityPK">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="classcomplianceregulationcode">
+		<xs:sequence>
+			<xs:element name="classcomplianceregulationcodePK" type="tns:classcomplianceregulationcodePK" minOccurs="0"/>
+			<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="classcomplianceregulationcodePK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="classcomplianceregulationcode" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="classificatorEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CLASSIFICATOR005"/>
+			<xs:enumeration value="CLASSIFICATOR007"/>
+			<xs:enumeration value="TNVED"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="classificatorUnit">
+		<xs:sequence>
+			<xs:element name="code" type="xs:string" minOccurs="0"/>
+			<xs:element name="description" type="xs:string" minOccurs="0"/>
+			<xs:element name="id" type="xs:int"/>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+			<xs:element name="path" type="xs:string" minOccurs="0"/>
+			<xs:element name="position" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="cleanTradeitemsOfPoolByDeleteTime">
+		<xs:sequence>
+			<xs:element name="request" type="tns:cleanTradeitemsOfPoolByDeleteTimeReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="cleanTradeitemsOfPoolByDeleteTimeEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="NO_RESULTS"/>
+			<xs:enumeration value="ENDED_QUOTA"/>
+			<xs:enumeration value="INTERNAL_ERROR"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="cleanTradeitemsOfPoolByDeleteTimeReq">
+		<xs:sequence>
+			<xs:element name="date" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="cleanTradeitemsOfPoolByDeleteTimeResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:cleanTradeitemsOfPoolByDeleteTimeEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="recordsDeleted" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="cleanTradeitemsOfPoolByDeleteTimeResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:cleanTradeitemsOfPoolByDeleteTimeResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="communicaionchannel">
+		<xs:sequence>
+			<xs:element name="communicaionchannelPK" type="tns:communicaionchannelPK" minOccurs="0"/>
+			<xs:element name="contact" type="tns:contact" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="communicaionchannelPK">
+		<xs:sequence>
+			<xs:element name="contactid" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="communicationchannelcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="communicationnumber" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="contact">
+		<xs:sequence>
+			<xs:element name="contactid" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="personordepartmentname" type="xs:string" minOccurs="0"/>
+			<xs:element name="communicaionchannelCollection" type="tns:communicaionchannel" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="gln" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="contactname">
+		<xs:sequence>
+			<xs:element name="contactnamePK" type="tns:contactnamePK" minOccurs="0"/>
+			<xs:element name="contactname" type="xs:string" minOccurs="0"/>
+			<xs:element name="party" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="contactnamePK">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="depth">
+		<xs:sequence>
+			<xs:element name="depthPK" type="tns:depthPK" minOccurs="0"/>
+			<xs:element name="value" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="tradeitemmeasurements" type="tns:tradeitemmeasurements" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="depthPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="unitofmeasure" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="diameter">
+		<xs:sequence>
+			<xs:element name="diameterPK" type="tns:diameterPK" minOccurs="0"/>
+			<xs:element name="value" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="tradeitemmeasurements" type="tns:tradeitemmeasurements" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="diameterPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="unitofmeasure" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="drainedweight">
+		<xs:sequence>
+			<xs:element name="drainedweightPK" type="tns:drainedweightPK" minOccurs="0"/>
+			<xs:element name="value" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="tradeitemmeasurements" type="tns:tradeitemmeasurements" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="drainedweightPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="unitofmeasure" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="fmpContent">
+		<xs:sequence>
+			<xs:element name="fmpContentPK" type="tns:fmpContentPK" minOccurs="0"/>
+			<xs:element name="fmptypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="minfmpcontent" type="xs:string" minOccurs="0"/>
+			<xs:element name="unitmeasure" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="fmpContentInformation">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="fmptypecodelistagency" type="xs:string" minOccurs="0"/>
+			<xs:element name="fmptypecodelistidentification" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="fmpContentPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="fmpuuid" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageAllergyRelated">
+		<xs:sequence>
+			<xs:element name="foodBeverageAllergyRelatedPK" type="tns:foodBeverageAllergyRelatedPK" minOccurs="0"/>
+			<xs:element name="allergenspecificationname" type="xs:string" minOccurs="0"/>
+			<xs:element name="allergentypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="levelofcontainment" type="xs:string" minOccurs="0"/>
+			<xs:element name="allergenspecificationagency" type="xs:string" minOccurs="0"/>
+			<xs:element name="allergenstatement" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageAllergyRelatedPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="allergenuuid" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageCheeseInform">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="isrindedible" type="xs:string" minOccurs="0"/>
+			<xs:element name="isripenedinrind" type="xs:string" minOccurs="0"/>
+			<xs:element name="rennettypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="ripeningtimeperiod" type="xs:string" minOccurs="0"/>
+			<xs:element name="unitmeasure" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageDietRelated">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="dietcertificationagency" type="xs:string" minOccurs="0"/>
+			<xs:element name="dietcertificationnumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="diettypedescription" type="xs:string" minOccurs="0"/>
+			<xs:element name="diettypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="diettypesubcode" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageInformation">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="productioneffectivedate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="productiondescription" type="xs:string" minOccurs="0"/>
+			<xs:element name="productionfacility" type="xs:string" minOccurs="0"/>
+			<xs:element name="customersupportcentre" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageIngredient">
+		<xs:sequence>
+			<xs:element name="foodBeverageIngredientPK" type="tns:foodBeverageIngredientPK" minOccurs="0"/>
+			<xs:element name="ingredientsequencs" type="xs:int" minOccurs="0"/>
+			<xs:element name="ingredientname" type="xs:string" minOccurs="0"/>
+			<xs:element name="countryoforigin" type="xs:string" minOccurs="0"/>
+			<xs:element name="contentpercentage" type="xs:string" minOccurs="0"/>
+			<xs:element name="fishcatchzone" type="xs:string" minOccurs="0"/>
+			<xs:element name="grapevarientcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="growingmethodcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="ingredientpurpose" type="xs:string" minOccurs="0"/>
+			<xs:element name="ingredientsourceanimalcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="ingredientstatement" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageIngredientPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="ingredientuuid" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageMarketingInform">
+		<xs:sequence>
+			<xs:element name="foodBeverageMarketingInformPK" type="tns:foodBeverageMarketingInformPK" minOccurs="0"/>
+			<xs:element name="nutritionalclaimcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="nutritionalprogramcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="servingsuggestion" type="xs:string" minOccurs="0"/>
+			<xs:element name="nutritionalclaim" type="xs:string" minOccurs="0"/>
+			<xs:element name="healthclaim" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageMarketingInformPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="marketinguuid" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageMicrobiological">
+		<xs:sequence>
+			<xs:element name="foodBeverageMicrobiologicalPK" type="tns:foodBeverageMicrobiologicalPK" minOccurs="0"/>
+			<xs:element name="microbiologicalorganismcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="maximumvalue" type="xs:string" minOccurs="0"/>
+			<xs:element name="measurementvalue" type="xs:string" minOccurs="0"/>
+			<xs:element name="unitmeasure" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageMicrobiologicalPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="microbiologicaluuid" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageNutrient">
+		<xs:sequence>
+			<xs:element name="foodBeverageNutrientPK" type="tns:foodBeverageNutrientPK" minOccurs="0"/>
+			<xs:element name="nurtienttypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="measurementprecision" type="xs:string" minOccurs="0"/>
+			<xs:element name="percentageofdailyvalueintake" type="xs:string" minOccurs="0"/>
+			<xs:element name="unitmeasure" type="xs:string" minOccurs="0"/>
+			<xs:element name="measurementprecisionvalue" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageNutrientInfo">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="preparationstate" type="xs:string" minOccurs="0"/>
+			<xs:element name="fatinmilkcontent" type="xs:string" minOccurs="0"/>
+			<xs:element name="dailyvalueintakereference" type="xs:string" minOccurs="0"/>
+			<xs:element name="householdservingsize" type="xs:string" minOccurs="0"/>
+			<xs:element name="servingsize" type="xs:string" minOccurs="0"/>
+			<xs:element name="unitmeasure" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageNutrientPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="nutrientuuid" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeveragePreparation">
+		<xs:sequence>
+			<xs:element name="foodBeveragePreparationPK" type="tns:foodBeveragePreparationPK" minOccurs="0"/>
+			<xs:element name="preparationtype" type="xs:string" minOccurs="0"/>
+			<xs:element name="conveniencelevel" type="xs:string" minOccurs="0"/>
+			<xs:element name="precautions" type="xs:string" minOccurs="0"/>
+			<xs:element name="preparationinstructions" type="xs:string" minOccurs="0"/>
+			<xs:element name="mintemperatureconsumption" type="xs:string" minOccurs="0"/>
+			<xs:element name="maxtemperatureconsumption" type="xs:string" minOccurs="0"/>
+			<xs:element name="preservationtechniquecode" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeveragePreparationPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="preparationuuid" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBeverageServingInfo">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="numberofservingsperpackage" type="xs:int" minOccurs="0"/>
+			<xs:element name="numberofsmallestunitperpackage" type="xs:int" minOccurs="0"/>
+			<xs:element name="maximumnumberofsmallestunits" type="xs:int" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBevergeAdditiveInfo">
+		<xs:sequence>
+			<xs:element name="foodBevergeAdditiveInfoPK" type="tns:foodBevergeAdditiveInfoPK" minOccurs="0"/>
+			<xs:element name="additivename" type="xs:string" minOccurs="0"/>
+			<xs:element name="levelofcontainment" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBevergeAdditiveInfoPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="additiveuuid" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodBevergeIngredientInform">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="geneticallymodifieddeclaration" type="xs:string" minOccurs="0"/>
+			<xs:element name="ishomogenised" type="xs:string" minOccurs="0"/>
+			<xs:element name="weightmaterialused" type="xs:string" minOccurs="0"/>
+			<xs:element name="weightmaterialmeasurement" type="xs:string" minOccurs="0"/>
+			<xs:element name="multidescription" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodCertificationInformation">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="certificationagency" type="xs:string" minOccurs="0"/>
+			<xs:element name="certificationstandart" type="xs:string" minOccurs="0"/>
+			<xs:element name="certificationvalue" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodPhysiochemicalCharact">
+		<xs:sequence>
+			<xs:element name="foodPhysiochemicalCharactPK" type="tns:foodPhysiochemicalCharactPK" minOccurs="0"/>
+			<xs:element name="characteristiccode" type="xs:string" minOccurs="0"/>
+			<xs:element name="characteristicvalue" type="xs:string" minOccurs="0"/>
+			<xs:element name="unitmeasure" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foodPhysiochemicalCharactPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="characteristicuuid" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="functionalname">
+		<xs:sequence>
+			<xs:element name="functionalnamePK" type="tns:functionalnamePK" minOccurs="0"/>
+			<xs:element name="functionalname" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="functionalnamePK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="gdsntradeitemclassification">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="classificationcategorycode" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassatttypecode1" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassattvaluecode1" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassatttypecode2" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassattvaluecode2" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassatttypecode3" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassattvaluecode3" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassatttypecode4" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassattvaluecode4" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassatttypecode5" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassattvaluecode5" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassatttypecode6" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassattvaluecode6" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassatttypecode7" type="xs:int" minOccurs="0"/>
+			<xs:element name="eanuccclassattvaluecode7" type="xs:int" minOccurs="0"/>
+			<xs:element name="classificationcategorypath" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getClassificator">
+		<xs:sequence>
+			<xs:element name="request" type="tns:getClassificatorReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="getClassificatorEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_CLASSIFICATOR"/>
+			<xs:enumeration value="INVALID_PATH"/>
+			<xs:enumeration value="INVALID_POSITION"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="getClassificatorReq">
+		<xs:sequence>
+			<xs:element name="classificator" type="tns:classificatorEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="path" type="xs:string" minOccurs="0"/>
+			<xs:element name="position" type="xs:int"/>
+			<xs:element name="recordCount" type="xs:int"/>
+			<xs:element name="startRecord" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getClassificatorResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:getClassificatorEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="totalRecordCount" type="xs:int"/>
+			<xs:element name="units" type="tns:classificatorUnit" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getClassificatorResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:getClassificatorResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getCurrentTime">
+		<xs:sequence>
+			<xs:element name="request" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getCurrentTimeResponse">
+		<xs:sequence>
+			<xs:element name="return" type="xs:dateTime" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getFullPartyByGLN">
+		<xs:sequence>
+			<xs:element name="request" type="tns:getFullPartyByGLNReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="getFullPartyByGLNEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_GLN"/>
+			<xs:enumeration value="GLN_NOT_EXIST"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="getFullPartyByGLNReq">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getFullPartyByGLNResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:getFullPartyByGLNEnum" minOccurs="0"/>
+			<xs:element name="fullparty" type="tns:party" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getFullPartyByGLNResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:getFullPartyByGLNResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getFunctionalnameByGTIN">
+		<xs:sequence>
+			<xs:element name="request" type="tns:getFunctionalnameByGTINReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="getFunctionalnameByGTINEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_GTIN"/>
+			<xs:enumeration value="INVALID_LANG"/>
+			<xs:enumeration value="LANG_DONT_EXIST"/>
+			<xs:enumeration value="GTIN_DONT_EXIST"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="getFunctionalnameByGTINReq">
+		<xs:sequence>
+			<xs:element name="gtin" type="xs:long" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="lang" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getFunctionalnameByGTINResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:getFunctionalnameByGTINEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getFunctionalnameByGTINResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:getFunctionalnameByGTINResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getOldHeaderReq">
+		<xs:sequence>
+			<xs:element name="request" type="tns:apiHeaderRequest" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getOldHeaderReqResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:apiHeaderRequest" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getOldHeaderResp">
+		<xs:sequence>
+			<xs:element name="request" type="tns:apiHeaderResponse" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getOldHeaderRespResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:apiHeaderResponse" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getOldParty">
+		<xs:sequence>
+			<xs:element name="request" type="tns:getFullPartyByGLNReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getOldPartyResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getOldTradeitem">
+		<xs:sequence>
+			<xs:element name="request" type="tns:getTradeitemByGTINReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getOldTradeitemResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getPartyByGLN">
+		<xs:sequence>
+			<xs:element name="request" type="tns:getPartyByGLNReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="getPartyByGLNEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_GLN"/>
+			<xs:enumeration value="GLN_NOT_EXIST"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="getPartyByGLNReq">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getPartyByGLNResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:getPartyByGLNEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getPartyByGLNResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:getPartyByGLNResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getSimpleTradeitemsByGTIN">
+		<xs:sequence>
+			<xs:element name="request" type="tns:getSimpleTradeitemsByGTINReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="getSimpleTradeitemsByGTINEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="PARTLY_OK"/>
+			<xs:enumeration value="INVALID_LIST"/>
+			<xs:enumeration value="INVALID_LANG"/>
+			<xs:enumeration value="ENDED_QUOTA"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="getSimpleTradeitemsByGTINReq">
+		<xs:sequence>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="lang" type="xs:string" minOccurs="0"/>
+			<xs:element name="listOfGTIN" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getSimpleTradeitemsByGTINResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:getSimpleTradeitemsByGTINEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="tradeitems" type="tns:simpleTradeitem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getSimpleTradeitemsByGTINResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:getSimpleTradeitemsByGTINResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="getTIImageKindsByGTINEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_LIST_OF_GTINS"/>
+			<xs:enumeration value="INTERNAL_ERROR"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="getTIImageKindsByGTINs">
+		<xs:sequence>
+			<xs:element name="request" type="tns:getTIImageKindsByGTINsReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getTIImageKindsByGTINsReq">
+		<xs:sequence>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="listOfGTIN" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getTIImageKindsByGTINsResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:getTIImageKindsByGTINEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="tiik" type="tns:tiImageKinds" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getTIImageKindsByGTINsResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:getTIImageKindsByGTINsResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getTradeitemByGTIN">
+		<xs:sequence>
+			<xs:element name="request" type="tns:getTradeitemByGTINReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="getTradeitemByGTINEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_GTIN"/>
+			<xs:enumeration value="ENDED_QUOTA"/>
+			<xs:enumeration value="GTIN_DONT_EXIST"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="getTradeitemByGTINReq">
+		<xs:sequence>
+			<xs:element name="gtin" type="xs:long" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getTradeitemByGTINResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:getTradeitemByGTINEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="quota" type="xs:long"/>
+			<xs:element name="ti" type="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getTradeitemByGTINResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:getTradeitemByGTINResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getTradeitemsByGTINs">
+		<xs:sequence>
+			<xs:element name="request" type="tns:getTradeitemsByGTINsReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="getTradeitemsByGTINsEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="NO_RESULTS"/>
+			<xs:enumeration value="ENDED_QUOTA"/>
+			<xs:enumeration value="INTERNAL_ERROR"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="getTradeitemsByGTINsReq">
+		<xs:sequence>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="listOfGTIN" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getTradeitemsByGTINsResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:getTradeitemsByGTINsEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="quota" type="xs:long"/>
+			<xs:element name="tis" type="tns:tradeitem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getTradeitemsByGTINsResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:getTradeitemsByGTINsResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getTradeitemsOfPoolByModifiedTime">
+		<xs:sequence>
+			<xs:element name="request" type="tns:getTradeitemsOfPoolByModifiedTimeReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="getTradeitemsOfPoolByModifiedTimeEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="NO_RESULTS"/>
+			<xs:enumeration value="ENDED_QUOTA"/>
+			<xs:enumeration value="INVALID_DATE"/>
+			<xs:enumeration value="INTERNAL_ERROR"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="getTradeitemsOfPoolByModifiedTimeReq">
+		<xs:sequence>
+			<xs:element name="dateFrom" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="dateTo" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getTradeitemsOfPoolByModifiedTimeResp">
+		<xs:sequence>
+			<xs:element name="currentDate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="deletedTis" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="errorCode" type="tns:getTradeitemsOfPoolByModifiedTimeEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="tis" type="tns:tradeitem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getTradeitemsOfPoolByModifiedTimeResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:getTradeitemsOfPoolByModifiedTimeResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getVariantByGTIN">
+		<xs:sequence>
+			<xs:element name="request" type="tns:getVariantByGTINReq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="getVariantByGTINEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_GTIN"/>
+			<xs:enumeration value="INVALID_LANG"/>
+			<xs:enumeration value="LANG_DONT_EXIST"/>
+			<xs:enumeration value="GTIN_DONT_EXIST"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="getVariantByGTINReq">
+		<xs:sequence>
+			<xs:element name="gtin" type="xs:long" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="lang" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getVariantByGTINResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:getVariantByGTINEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="variant" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getVariantByGTINResponse">
+		<xs:sequence>
+			<xs:element name="return" type="tns:getVariantByGTINResp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="grossweight">
+		<xs:sequence>
+			<xs:element name="grossweightPK" type="tns:grossweightPK" minOccurs="0"/>
+			<xs:element name="value" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="tradeitemmeasurements" type="tns:tradeitemmeasurements" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="grossweightPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="unitofmeasure" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="hazardousGoods">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="manufacturersnumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="istransportationhazadousmater" type="xs:short" minOccurs="0"/>
+			<xs:element name="transportationregulatiryagency" type="xs:string" minOccurs="0"/>
+			<xs:element name="isairtransportforbidden" type="xs:short" minOccurs="0"/>
+			<xs:element name="airtransportforbiddenreason" type="xs:string" minOccurs="0"/>
+			<xs:element name="isappropriateforaircargo" type="xs:short" minOccurs="0"/>
+			<xs:element name="aircargomaximumquantity" type="xs:int" minOccurs="0"/>
+			<xs:element name="aircargoquantitymeasurement" type="xs:string" minOccurs="0"/>
+			<xs:element name="isappropriateforairpassenger" type="xs:short" minOccurs="0"/>
+			<xs:element name="airpassengermaximumquantity" type="xs:int" minOccurs="0"/>
+			<xs:element name="airpassengequantitymeasurement" type="xs:string" minOccurs="0"/>
+			<xs:element name="iswatertransportforbidden" type="xs:short" minOccurs="0"/>
+			<xs:element name="watertransportforbiddenreason" type="xs:string" minOccurs="0"/>
+			<xs:element name="marinepollutanttechnicalname" type="xs:string" minOccurs="0"/>
+			<xs:element name="hasflashpoint" type="xs:short" minOccurs="0"/>
+			<xs:element name="flashpointtemperature" type="xs:int" minOccurs="0"/>
+			<xs:element name="flashtemperaturemeasurememt" type="xs:string" minOccurs="0"/>
+			<xs:element name="ishazardshippingpaperrequired" type="xs:short" minOccurs="0"/>
+			<xs:element name="isclassifiedasormd" type="xs:short" minOccurs="0"/>
+			<xs:element name="isexceptedquantity" type="xs:short" minOccurs="0"/>
+			<xs:element name="hazardousclassordivision" type="xs:string" minOccurs="0"/>
+			<xs:element name="identificationnumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="ishazardousmatvolumerequired" type="xs:short" minOccurs="0"/>
+			<xs:element name="ishazardoussubstancereportable" type="xs:short" minOccurs="0"/>
+			<xs:element name="islimitedquantity" type="xs:short" minOccurs="0"/>
+			<xs:element name="propershippingname" type="xs:string" minOccurs="0"/>
+			<xs:element name="exemptionorapprovalreferencnum" type="xs:string" minOccurs="0"/>
+			<xs:element name="hazardousmaterialadditionalinf" type="xs:string" minOccurs="0"/>
+			<xs:element name="hazardousmaterialtechnicalname" type="xs:string" minOccurs="0"/>
+			<xs:element name="hazardoussubstancetechnicname" type="xs:string" minOccurs="0"/>
+			<xs:element name="packinggroup" type="xs:string" minOccurs="0"/>
+			<xs:element name="subsidiaryclassdivision" type="xs:string" minOccurs="0"/>
+			<xs:element name="hazardousmaterialvolume" type="xs:int" minOccurs="0"/>
+			<xs:element name="hazardousmaterialmeasurement" type="xs:string" minOccurs="0"/>
+			<xs:element name="basicrisk" type="xs:string" minOccurs="0"/>
+			<xs:element name="picturebasicrisk" type="xs:string" minOccurs="0"/>
+			<xs:element name="pictureextrarisk" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="height">
+		<xs:sequence>
+			<xs:element name="heightPK" type="tns:heightPK" minOccurs="0"/>
+			<xs:element name="value" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="tradeitemmeasurements" type="tns:tradeitemmeasurements" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="heightPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="unitofmeasure" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="legalName">
+		<xs:sequence>
+			<xs:element name="legalNamePK" type="tns:legalNamePK" minOccurs="0"/>
+			<xs:element name="legalName" type="xs:string" minOccurs="0"/>
+			<xs:element name="party" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="legalNamePK">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="legalShortName">
+		<xs:sequence>
+			<xs:element name="legalShortNamePK" type="tns:legalShortNamePK" minOccurs="0"/>
+			<xs:element name="legalShortName" type="xs:string" minOccurs="0"/>
+			<xs:element name="party" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="legalShortNamePK">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="loginEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_USERNAME"/>
+			<xs:enumeration value="INVALID_PASSWORD"/>
+			<xs:enumeration value="INVALID_USERNAME_OR_PASSWORD"/>
+			<xs:enumeration value="NO_ACCESS"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="loginReq">
+		<xs:sequence>
+			<xs:element name="password" type="xs:string" minOccurs="0"/>
+			<xs:element name="username" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="loginResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:loginEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="logoutEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="logoutReq">
+		<xs:sequence>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="logoutResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:logoutEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="netcontent">
+		<xs:sequence>
+			<xs:element name="netcontentPK" type="tns:netcontentPK" minOccurs="0"/>
+			<xs:element name="value" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="tradeitemmeasurements" type="tns:tradeitemmeasurements" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="netcontentPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="unitofmeasure" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="netweight">
+		<xs:sequence>
+			<xs:element name="netweightPK" type="tns:netweightPK" minOccurs="0"/>
+			<xs:element name="value" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="tradeitemmeasurements" type="tns:tradeitemmeasurements" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="netweightPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="unitofmeasure" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="nextlowerleveltiinformation">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="quantityofchildren" type="xs:long" minOccurs="0"/>
+			<xs:element name="totalquantitynextlowerlevelti" type="xs:long" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+			<xs:element name="childtradeitemCollection" type="tns:childtradeitem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="packagemarksdietallergen">
+		<xs:sequence>
+			<xs:element name="packagemarksdietallergenPK" type="tns:packagemarksdietallergenPK" minOccurs="0"/>
+			<xs:element name="packagingmarking" type="tns:packagingmarking" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="packagemarksdietallergenPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="packagemarksdietallergen" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="packagemarksenvironment">
+		<xs:sequence>
+			<xs:element name="packagemarksenvironmentPK" type="tns:packagemarksenvironmentPK" minOccurs="0"/>
+			<xs:element name="packagingmarking" type="tns:packagingmarking" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="packagemarksenvironmentPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="packagemarksenvironment" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="packagemarksethical">
+		<xs:sequence>
+			<xs:element name="packagemarksethicalPK" type="tns:packagemarksethicalPK" minOccurs="0"/>
+			<xs:element name="packagingmarking" type="tns:packagingmarking" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="packagemarksethicalPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="packagemarksethical" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="packagemarksfreefrom">
+		<xs:sequence>
+			<xs:element name="packagemarksfreefromPK" type="tns:packagemarksfreefromPK" minOccurs="0"/>
+			<xs:element name="packagingmarking" type="tns:packagingmarking" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="packagemarksfreefromPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="packagemarksfreefrom" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="packagemarkshygienic">
+		<xs:sequence>
+			<xs:element name="packagemarkshygienicPK" type="tns:packagemarkshygienicPK" minOccurs="0"/>
+			<xs:element name="packagingmarking" type="tns:packagingmarking" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="packagemarkshygienicPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="packagemarkshygienic" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="packagingmarking">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="ispackagingmarkedreturnable" type="xs:short" minOccurs="0"/>
+			<xs:element name="ispckgmarkedwithingredients" type="xs:short" minOccurs="0"/>
+			<xs:element name="ispriceonpack" type="xs:short" minOccurs="0"/>
+			<xs:element name="offeronpack" type="xs:string" minOccurs="0"/>
+			<xs:element name="pckgmarkedrecyclablescheme" type="xs:string" minOccurs="0"/>
+			<xs:element name="packagemarksdietallergenCollection" type="tns:packagemarksdietallergen" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="pckgmarkedexpirationdatetypeCollection" type="tns:pckgmarkedexpirationdatetype" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+			<xs:element name="packagemarkshygienicCollection" type="tns:packagemarkshygienic" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="packagemarksethicalCollection" type="tns:packagemarksethical" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="packagemarksfreefromCollection" type="tns:packagemarksfreefrom" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="packagemarksenvironmentCollection" type="tns:packagemarksenvironment" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="party">
+		<xs:complexContent>
+			<xs:extension base="tns:partyAddons">
+				<xs:sequence>
+					<xs:element name="gln" type="xs:long" minOccurs="0"/>
+					<xs:element name="partystartdata" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="effectivechangedata" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="partyenddata" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="city" type="xs:string" minOccurs="0"/>
+					<xs:element name="countryisocode" type="xs:string" minOccurs="0"/>
+					<xs:element name="languageoftheparty" type="xs:string" minOccurs="0"/>
+					<xs:element name="name" type="xs:string" minOccurs="0"/>
+					<xs:element name="currency" type="xs:string" minOccurs="0"/>
+					<xs:element name="poboxnumber" type="xs:string" minOccurs="0"/>
+					<xs:element name="postalcode" type="xs:string" minOccurs="0"/>
+					<xs:element name="provincecode" type="xs:string" minOccurs="0"/>
+					<xs:element name="state" type="xs:string" minOccurs="0"/>
+					<xs:element name="streetaddressone" type="xs:string" minOccurs="0"/>
+					<xs:element name="streetaddresstwo" type="xs:string" minOccurs="0"/>
+					<xs:element name="timeCreated" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="isfirstgln" type="xs:short" minOccurs="0"/>
+					<xs:element name="firstgln" type="xs:long" minOccurs="0"/>
+					<xs:element name="description" type="xs:string" minOccurs="0"/>
+					<xs:element name="securityusersCollection" type="tns:securityusers" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="streetaddressoneCollection" type="tns:streetaddressone" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="alternatepartyidentificationCollection" type="tns:alternatepartyidentification" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="partyrolesCollection" type="tns:partyroles" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="bankaccountsCollection" type="tns:bankaccounts" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="partygcpCollection" type="tns:partygcp" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="legalNameCollection" type="tns:legalName" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="cityCollection" type="tns:city" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="contactnameCollection" type="tns:contactname" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="chiefnameCollection" type="tns:chiefname" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="partyrb" type="tns:partyrb" minOccurs="0"/>
+					<xs:element name="streetaddresstwoCollection" type="tns:streetaddresstwo" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="legalShortNameCollection" type="tns:legalShortName" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="contactCollection" type="tns:contact" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="secondarygovernmentareaCollection" type="tns:secondarygovernmentarea" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="partytaxinformationCollection" type="tns:partytaxinformation" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="partyAddons">
+		<xs:sequence>
+			<xs:element name="selected" type="xs:boolean"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="partygcp">
+		<xs:sequence>
+			<xs:element name="partygcpPK" type="tns:partygcpPK" minOccurs="0"/>
+			<xs:element name="party" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="partygcpPK">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long"/>
+			<xs:element name="gcp" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="partyrb">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long" minOccurs="0"/>
+			<xs:element name="okrb005code" type="xs:int" minOccurs="0"/>
+			<xs:element name="okrb005path" type="xs:string" minOccurs="0"/>
+			<xs:element name="lastbcdsyncdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="unpcode" type="xs:int" minOccurs="0"/>
+			<xs:element name="isiccode" type="xs:short" minOccurs="0"/>
+			<xs:element name="entrydate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="tel" type="xs:string" minOccurs="0"/>
+			<xs:element name="fax" type="xs:string" minOccurs="0"/>
+			<xs:element name="email" type="xs:string" minOccurs="0"/>
+			<xs:element name="chieftel" type="xs:string" minOccurs="0"/>
+			<xs:element name="contacttel" type="xs:string" minOccurs="0"/>
+			<xs:element name="temporarylockeddate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="exclusiondate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="legalform" type="xs:string" minOccurs="0"/>
+			<xs:element name="website" type="xs:string" minOccurs="0"/>
+			<xs:element name="party" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="partyroles">
+		<xs:sequence>
+			<xs:element name="partyrolesPK" type="tns:partyrolesPK" minOccurs="0"/>
+			<xs:element name="party" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="partyrolesPK">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long"/>
+			<xs:element name="partyrole" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="partytaxinformation">
+		<xs:sequence>
+			<xs:element name="partytaxinformationid" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="taxamount" type="xs:string" minOccurs="0"/>
+			<xs:element name="taxauthority" type="xs:string" minOccurs="0"/>
+			<xs:element name="taxpercent" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="taxregistrationnumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="typeoftaxragistration" type="xs:string" minOccurs="0"/>
+			<xs:element name="gln" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="pckgmarkedexpirationdatetype">
+		<xs:sequence>
+			<xs:element name="pckgmarkedexpirationdatetypePK" type="tns:pckgmarkedexpirationdatetypePK" minOccurs="0"/>
+			<xs:element name="packagingmarking" type="tns:packagingmarking" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="pckgmarkedexpirationdatetypePK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="pckgmarkedexpirationdatetype" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="pools">
+		<xs:sequence>
+			<xs:element name="poolsPK" type="tns:poolsPK" minOccurs="0"/>
+			<xs:element name="type" type="xs:short" minOccurs="0"/>
+			<xs:element name="created" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="lastmodified" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="datesync" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="poolscontentCollection" type="tns:poolscontent" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="securityusers" type="tns:securityusers" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="poolsPK">
+		<xs:sequence>
+			<xs:element name="username" type="xs:string" minOccurs="0"/>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="poolscontent">
+		<xs:sequence>
+			<xs:element name="poolscontentPK" type="tns:poolscontentPK" minOccurs="0"/>
+			<xs:element name="pools" type="tns:pools" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="poolscontentPK">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="username" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="productYieldInformation">
+		<xs:sequence>
+			<xs:element name="productYieldInformationPK" type="tns:productYieldInformationPK" minOccurs="0"/>
+			<xs:element name="productyieldtypecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="productyieldvariation" type="xs:string" minOccurs="0"/>
+			<xs:element name="productyield" type="xs:string" minOccurs="0"/>
+			<xs:element name="productyieldunitofmeasure" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="productYieldInformationPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="yielduuid" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="productrange">
+		<xs:sequence>
+			<xs:element name="productrangePK" type="tns:productrangePK" minOccurs="0"/>
+			<xs:element name="productrange" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="productrangePK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="searchPartiesByModifiedTimeEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_FROMDATE"/>
+			<xs:enumeration value="INVALID_TODATE"/>
+			<xs:enumeration value="INVALID_RECORD_COUNT"/>
+			<xs:enumeration value="INVALID_START_RECORD"/>
+			<xs:enumeration value="NO_RESULTS"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="searchPartiesByModifiedTimeReq">
+		<xs:sequence>
+			<xs:element name="fromDate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="recordCount" type="xs:int"/>
+			<xs:element name="startRecord" type="xs:int"/>
+			<xs:element name="toDate" type="xs:dateTime" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="searchPartiesByModifiedTimeResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:searchPartiesByModifiedTimeEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="parties" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="totalRecordCount" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="searchSimpleTradeitemsByModifiedTimeEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_FROMDATE"/>
+			<xs:enumeration value="INVALID_TODATE"/>
+			<xs:enumeration value="INVALID_RECORD_COUNT"/>
+			<xs:enumeration value="INVALID_START_RECORD"/>
+			<xs:enumeration value="INVALID_ROLE"/>
+			<xs:enumeration value="NO_RESULTS"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="searchSimpleTradeitemsByModifiedTimeReq">
+		<xs:sequence>
+			<xs:element name="fromDate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="recordCount" type="xs:int"/>
+			<xs:element name="startRecord" type="xs:int"/>
+			<xs:element name="toDate" type="xs:dateTime" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="searchSimpleTradeitemsByModifiedTimeResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:searchSimpleTradeitemsByModifiedTimeEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="totalRecordCount" type="xs:int"/>
+			<xs:element name="tradeitems" type="tns:simpleTradeitem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="searchTradeitemsByGLNAndModifiedTimeEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_GLN"/>
+			<xs:enumeration value="INVALID_FROMDATE"/>
+			<xs:enumeration value="INVALID_TODATE"/>
+			<xs:enumeration value="INVALID_RECORD_COUNT"/>
+			<xs:enumeration value="INVALID_START_RECORD"/>
+			<xs:enumeration value="NO_RESULTS"/>
+			<xs:enumeration value="GLN_DONT_EXIST"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="searchTradeitemsByGLNAndModifiedTimeReq">
+		<xs:sequence>
+			<xs:element name="fromDate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="gln" type="xs:long" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="recordCount" type="xs:int"/>
+			<xs:element name="startRecord" type="xs:int"/>
+			<xs:element name="toDate" type="xs:dateTime" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="searchTradeitemsByGLNAndModifiedTimeResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:searchTradeitemsByGLNAndModifiedTimeEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="totalRecordCount" type="xs:int"/>
+			<xs:element name="tradeitems" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="searchTradeitemsByGLNEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_GLN"/>
+			<xs:enumeration value="INVALID_RECORD_COUNT"/>
+			<xs:enumeration value="INVALID_START_RECORD"/>
+			<xs:enumeration value="NO_RESULTS"/>
+			<xs:enumeration value="GLN_DONT_EXIST"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="searchTradeitemsByGLNReq">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="recordCount" type="xs:int"/>
+			<xs:element name="startRecord" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="searchTradeitemsByGLNResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:searchTradeitemsByGLNEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="totalRecordCount" type="xs:int"/>
+			<xs:element name="tradeitems" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="searchTradeitemsByModifiedTimeEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_FROMDATE"/>
+			<xs:enumeration value="INVALID_TODATE"/>
+			<xs:enumeration value="INVALID_RECORD_COUNT"/>
+			<xs:enumeration value="INVALID_START_RECORD"/>
+			<xs:enumeration value="NO_RESULTS"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="searchTradeitemsByModifiedTimeReq">
+		<xs:sequence>
+			<xs:element name="fromDate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="recordCount" type="xs:int"/>
+			<xs:element name="startRecord" type="xs:int"/>
+			<xs:element name="toDate" type="xs:dateTime" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="searchTradeitemsByModifiedTimeResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:searchTradeitemsByModifiedTimeEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="totalRecordCount" type="xs:int"/>
+			<xs:element name="tradeitems" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="searchTradeitemsByNameEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_NAME"/>
+			<xs:enumeration value="INVALID_RECORD_COUNT"/>
+			<xs:enumeration value="INVALID_START_RECORD"/>
+			<xs:enumeration value="NO_RESULTS"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="searchTradeitemsByNameReq">
+		<xs:sequence>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+			<xs:element name="recordCount" type="xs:int"/>
+			<xs:element name="startRecord" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="searchTradeitemsByNameResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:searchTradeitemsByNameEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="totalRecordCount" type="xs:int"/>
+			<xs:element name="tradeitems" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="searchTradeitemsByOKRB007Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_NAME"/>
+			<xs:enumeration value="INVALID_RECORD_COUNT"/>
+			<xs:enumeration value="INVALID_START_RECORD"/>
+			<xs:enumeration value="NO_RESULTS"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="searchTradeitemsByOKRB007Req">
+		<xs:sequence>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="okrb007Code" type="xs:string" minOccurs="0"/>
+			<xs:element name="recordCount" type="xs:int"/>
+			<xs:element name="startRecord" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="searchTradeitemsByOKRB007Resp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:searchTradeitemsByOKRB007Enum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="totalRecordCount" type="xs:int"/>
+			<xs:element name="tradeitems" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="searchTradeitemsByTNVEDEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="API_ERROR"/>
+			<xs:enumeration value="OK"/>
+			<xs:enumeration value="INVALID_NAME"/>
+			<xs:enumeration value="INVALID_RECORD_COUNT"/>
+			<xs:enumeration value="INVALID_START_RECORD"/>
+			<xs:enumeration value="NO_RESULTS"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="searchTradeitemsByTNVEDReq">
+		<xs:sequence>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="recordCount" type="xs:int"/>
+			<xs:element name="startRecord" type="xs:int"/>
+			<xs:element name="tnvedCode" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="searchTradeitemsByTNVEDResp">
+		<xs:sequence>
+			<xs:element name="errorCode" type="tns:searchTradeitemsByTNVEDEnum" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderResponse" minOccurs="0"/>
+			<xs:element name="totalRecordCount" type="xs:int"/>
+			<xs:element name="tradeitems" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="secondarygovernmentarea">
+		<xs:sequence>
+			<xs:element name="secondarygovernmentareaPK" type="tns:secondarygovernmentareaPK" minOccurs="0"/>
+			<xs:element name="secondarygovernmentarea" type="xs:string" minOccurs="0"/>
+			<xs:element name="party" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="secondarygovernmentareaPK">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="securityauthorities">
+		<xs:sequence>
+			<xs:element name="securityauthoritiesPK" type="tns:securityauthoritiesPK" minOccurs="0"/>
+			<xs:element name="securityusers" type="tns:securityusers" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="securityauthoritiesPK">
+		<xs:sequence>
+			<xs:element name="username" type="xs:string" minOccurs="0"/>
+			<xs:element name="authority" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="securityusers">
+		<xs:complexContent>
+			<xs:extension base="tns:securityusersAddons">
+				<xs:sequence>
+					<xs:element name="username" type="xs:string" minOccurs="0"/>
+					<xs:element name="password" type="xs:string" minOccurs="0"/>
+					<xs:element name="enabled" type="xs:short"/>
+					<xs:element name="fio" type="xs:string" minOccurs="0"/>
+					<xs:element name="post" type="xs:string" minOccurs="0"/>
+					<xs:element name="mail" type="xs:string" minOccurs="0"/>
+					<xs:element name="epassquota" type="xs:long" minOccurs="0"/>
+					<xs:element name="epasstransactions" type="xs:long"/>
+					<xs:element name="creationdate" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="creationauthor" type="xs:string" minOccurs="0"/>
+					<xs:element name="lastmodificationdate" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="authoroflastmodification" type="xs:string" minOccurs="0"/>
+					<xs:element name="expirationdate" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="totalquota" type="xs:long" minOccurs="0"/>
+					<xs:element name="glncomment" type="xs:string" minOccurs="0"/>
+					<xs:element name="partyCollection" type="tns:party" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="userpoolsCollection" type="tns:userpools" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="securityauthoritiesCollection" type="tns:securityauthorities" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="poolsCollection" type="tns:pools" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="securityusersAddons">
+		<xs:sequence>
+			<xs:element name="selected" type="xs:boolean"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="simpleTradeitem">
+		<xs:sequence>
+			<xs:element name="brand" type="xs:string" minOccurs="0"/>
+			<xs:element name="description" type="xs:string" minOccurs="0"/>
+			<xs:element name="header" type="tns:apiHeaderRequest" minOccurs="0"/>
+			<xs:element name="manufactor" type="xs:string" minOccurs="0"/>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+			<xs:element name="subbrand" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="specTechnicalCharacteristics">
+		<xs:sequence>
+			<xs:element name="specTechnicalCharacteristicsPK" type="tns:specTechnicalCharacteristicsPK" minOccurs="0"/>
+			<xs:element name="categoryagencycode" type="xs:string" minOccurs="0"/>
+			<xs:element name="characteristicscategorycode" type="xs:string" minOccurs="0"/>
+			<xs:element name="characteristicsmeasurement" type="xs:string" minOccurs="0"/>
+			<xs:element name="characteristicscode" type="xs:string" minOccurs="0"/>
+			<xs:element name="characteristicsvaluecode" type="xs:string" minOccurs="0"/>
+			<xs:element name="characteristicsdescription" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="specTechnicalCharacteristicsPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+			<xs:element name="characteristicsuuid" type="xs:int" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="streetaddressone">
+		<xs:sequence>
+			<xs:element name="streetaddressonePK" type="tns:streetaddressonePK" minOccurs="0"/>
+			<xs:element name="streetaddressone" type="xs:string" minOccurs="0"/>
+			<xs:element name="party" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="streetaddressonePK">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="streetaddresstwo">
+		<xs:sequence>
+			<xs:element name="streetaddresstwoPK" type="tns:streetaddresstwoPK" minOccurs="0"/>
+			<xs:element name="streetaddresstwo" type="xs:string" minOccurs="0"/>
+			<xs:element name="party" type="tns:party" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="streetaddresstwoPK">
+		<xs:sequence>
+			<xs:element name="gln" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="subbrand">
+		<xs:sequence>
+			<xs:element name="subbrandPK" type="tns:subbrandPK" minOccurs="0"/>
+			<xs:element name="subbrand" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="subbrandPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="suggestedretailprice">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="effectivestartdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="effectiveenddate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="value" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="currency" type="xs:string" minOccurs="0"/>
+			<xs:element name="tradeitempricebasisquantity" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="tipbquom" type="xs:string" minOccurs="0"/>
+			<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="targetmarketinformation">
+		<xs:sequence>
+			<xs:element name="targetmarketinformationPK" type="tns:targetmarketinformationPK" minOccurs="0"/>
+			<xs:element name="targetmarketdescription" type="xs:string" minOccurs="0"/>
+			<xs:element name="targetmarketsubdivisioncode" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="targetmarketinformationPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="targetmarketcountrycode" type="xs:short"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tiImageKinds">
+		<xs:sequence>
+			<xs:element name="gtin" type="xs:long" minOccurs="0"/>
+			<xs:element name="kinds" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tpneutraltiinformation">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="isbconpckgvariablemeasurebc" type="xs:short" minOccurs="0"/>
+			<xs:element name="rfidtaggedcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="ticountryoflastprocessing" type="xs:string" minOccurs="0"/>
+			<xs:element name="tradeitemmarking" type="tns:tradeitemmarking" minOccurs="0"/>
+			<xs:element name="tradeitemhierarchy" type="tns:tradeitemhierarchy" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+			<xs:element name="suggestedretailprice" type="tns:suggestedretailprice" minOccurs="0"/>
+			<xs:element name="tradeitemcountryoforiginCollection" type="tns:tradeitemcountryoforigin" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="barcodetypeCollection" type="tns:barcodetype" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="tradeitemmeasurements" type="tns:tradeitemmeasurements" minOccurs="0"/>
+			<xs:element name="catalogueprice" type="tns:catalogueprice" minOccurs="0"/>
+			<xs:element name="tradeitemcountryofassemblyCollection" type="tns:tradeitemcountryofassembly" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="tradeitemunitindicator" type="tns:tradeitemunitindicator" minOccurs="0"/>
+			<xs:element name="packagingmarking" type="tns:packagingmarking" minOccurs="0"/>
+			<xs:element name="classcomplianceregulationcodeCollection" type="tns:classcomplianceregulationcode" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="tradeitemdateinformation" type="tns:tradeitemdateinformation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitem">
+		<xs:complexContent>
+			<xs:extension base="tns:tradeitemAddons">
+				<xs:sequence>
+					<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+					<xs:element name="tradeitemunitdescriptor" type="xs:string" minOccurs="0"/>
+					<xs:element name="informationprovidergln" type="xs:long" minOccurs="0"/>
+					<xs:element name="nameofinformationprovider" type="xs:string" minOccurs="0"/>
+					<xs:element name="tigroupidentificationcode" type="xs:string" minOccurs="0"/>
+					<xs:element name="timeCreated" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="effectivechangedata" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="gln" type="xs:long" minOccurs="0"/>
+					<xs:element name="istimarkedpublishable" type="xs:short" minOccurs="0"/>
+					<xs:element name="istimarkedinwork" type="xs:short" minOccurs="0"/>
+					<xs:element name="istimarkedreviewed" type="xs:short" minOccurs="0"/>
+					<xs:element name="tsdproduct" type="xs:short" minOccurs="0"/>
+					<xs:element name="tsdtargetmarket" type="xs:string" minOccurs="0"/>
+					<xs:element name="brandnameCollection" type="tns:brandname" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+					<xs:element name="tradeitemrbspec" type="tns:tradeitemrbspec" minOccurs="0"/>
+					<xs:element name="functionalnameCollection" type="tns:functionalname" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="tradeitemtradechannelCollection" type="tns:tradeitemtradechannel" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="gdsntradeitemclassification" type="tns:gdsntradeitemclassification" minOccurs="0"/>
+					<xs:element name="tradeitemTbAttValCollection" type="tns:tradeitemTbAttVal" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="tradeitemTbSpec" type="tns:tradeitemTbSpec" minOccurs="0"/>
+					<xs:element name="tradeitemsuppliersCollection" type="tns:tradeitemsuppliers" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="tradeitemformdescriptionCollection" type="tns:tradeitemformdescription" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="nextlowerleveltiinformation" type="tns:nextlowerleveltiinformation" minOccurs="0"/>
+					<xs:element name="variantCollection" type="tns:variant" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="subbrandCollection" type="tns:subbrand" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="productrangeCollection" type="tns:productrange" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="tradeitemdescriptionCollection" type="tns:tradeitemdescription" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="targetmarketinformationCollection" type="tns:targetmarketinformation" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="tradeitemrb" type="tns:tradeitemrb" minOccurs="0"/>
+					<xs:element name="specTechnicalCharacteristicsCollection" type="tns:specTechnicalCharacteristics" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="audioVideoPhoto" type="tns:audioVideoPhoto" minOccurs="0"/>
+					<xs:element name="audioVideoConnectorCollection" type="tns:audioVideoConnector" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="tvFeatureCollection" type="tns:tvFeature" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="hazardousGoods" type="tns:hazardousGoods" minOccurs="0"/>
+					<xs:element name="foodBevergeAdditiveInfoCollection" type="tns:foodBevergeAdditiveInfo" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="foodBeverageAllergyRelatedCollection" type="tns:foodBeverageAllergyRelated" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="foodBeverageDietRelated" type="tns:foodBeverageDietRelated" minOccurs="0"/>
+					<xs:element name="foodBeverageMicrobiologicalCollection" type="tns:foodBeverageMicrobiological" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="foodPhysiochemicalCharactCollection" type="tns:foodPhysiochemicalCharact" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="foodBeverageServingInfo" type="tns:foodBeverageServingInfo" minOccurs="0"/>
+					<xs:element name="foodCertificationInformation" type="tns:foodCertificationInformation" minOccurs="0"/>
+					<xs:element name="foodBeveragePreparationCollection" type="tns:foodBeveragePreparation" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="productYieldInformationCollection" type="tns:productYieldInformation" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="foodBeverageNutrientInfo" type="tns:foodBeverageNutrientInfo" minOccurs="0"/>
+					<xs:element name="foodBeverageNutrientCollection" type="tns:foodBeverageNutrient" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="foodBeverageInformation" type="tns:foodBeverageInformation" minOccurs="0"/>
+					<xs:element name="foodBevergeIngredientInform" type="tns:foodBevergeIngredientInform" minOccurs="0"/>
+					<xs:element name="foodBeverageIngredientCollection" type="tns:foodBeverageIngredient" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="fmpContentInformation" type="tns:fmpContentInformation" minOccurs="0"/>
+					<xs:element name="foodBeverageCheeseInform" type="tns:foodBeverageCheeseInform" minOccurs="0"/>
+					<xs:element name="fmpContentCollection" type="tns:fmpContent" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="foodBeverageMarketingInformCollection" type="tns:foodBeverageMarketingInform" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="tradeitemAddons">
+		<xs:sequence>
+			<xs:element name="selected" type="xs:boolean"/>
+			<xs:element name="unread" type="xs:boolean"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemTbAttVal">
+		<xs:sequence>
+			<xs:element name="tradeitemTbAttValPK" type="tns:tradeitemTbAttValPK" minOccurs="0"/>
+			<xs:element name="attVal" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemTbAttValPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="attName" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemTbSpec">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="humidity" type="xs:short" minOccurs="0"/>
+			<xs:element name="storageconditions" type="xs:string" minOccurs="0"/>
+			<xs:element name="childproducts" type="xs:string" minOccurs="0"/>
+			<xs:element name="addinfo" type="xs:string" minOccurs="0"/>
+			<xs:element name="packCode" type="xs:string" minOccurs="0"/>
+			<xs:element name="catId" type="xs:long" minOccurs="0"/>
+			<xs:element name="subcatId" type="xs:long" minOccurs="0"/>
+			<xs:element name="cat007" type="xs:string" minOccurs="0"/>
+			<xs:element name="maxhumidity" type="xs:short" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemcertificate">
+		<xs:sequence>
+			<xs:element name="tradeitemcertificatePK" type="tns:tradeitemcertificatePK" minOccurs="0"/>
+			<xs:element name="codeorganisation" type="xs:short" minOccurs="0"/>
+			<xs:element name="productname" type="xs:string" minOccurs="0"/>
+			<xs:element name="manufacturer" type="xs:string" minOccurs="0"/>
+			<xs:element name="declarant" type="xs:string" minOccurs="0"/>
+			<xs:element name="inspectioncontrol" type="xs:string" minOccurs="0"/>
+			<xs:element name="certificatedate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="term" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="prdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="pradate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="status" type="xs:string" minOccurs="0"/>
+			<xs:element name="reason" type="xs:string" minOccurs="0"/>
+			<xs:element name="sentdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="lastdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="lasteditor" type="xs:string" minOccurs="0"/>
+			<xs:element name="gln" type="xs:long" minOccurs="0"/>
+			<xs:element name="tradeitemrbCollection" type="tns:tradeitemrb" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemcertificatePK">
+		<xs:sequence>
+			<xs:element name="certificatetype" type="xs:string" minOccurs="0"/>
+			<xs:element name="certificatenumber" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemcountryofassembly">
+		<xs:sequence>
+			<xs:element name="tradeitemcountryofassemblyPK" type="tns:tradeitemcountryofassemblyPK" minOccurs="0"/>
+			<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemcountryofassemblyPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="tradeitemcountryofassembly" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemcountryoforigin">
+		<xs:sequence>
+			<xs:element name="tradeitemcountryoforiginPK" type="tns:tradeitemcountryoforiginPK" minOccurs="0"/>
+			<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemcountryoforiginPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="tradeitemcountryoforigin" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemdateinformation">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="effectivedate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="lastchangedatetime" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="publicationdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="startavailabilitydatetime" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="canceleddate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="consumeravailabilitydatetime" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="discontinueddate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="endavailabilitydatetime" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="enddatemaximumbuyingquantity" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="enddateminimumbuyingquantity" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="enddatetimeofexclusivity" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="firstorderdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="firstshipdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="lastorderdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="lastshipdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="startdatemaxbuyingquantity" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="startdateminbuyingquantity" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemdescription">
+		<xs:sequence>
+			<xs:element name="tradeitemdescriptionPK" type="tns:tradeitemdescriptionPK" minOccurs="0"/>
+			<xs:element name="tradeitemdescription" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemdescriptionPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemformdescription">
+		<xs:sequence>
+			<xs:element name="tradeitemformdescriptionPK" type="tns:tradeitemformdescriptionPK" minOccurs="0"/>
+			<xs:element name="tradeitemformdescription" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemformdescriptionPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemggr">
+		<xs:sequence>
+			<xs:element name="certificatenumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="certificatedate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="app" type="xs:string" minOccurs="0"/>
+			<xs:element name="productname" type="xs:string" minOccurs="0"/>
+			<xs:element name="registrationnumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="declarant" type="xs:string" minOccurs="0"/>
+			<xs:element name="manufacturer" type="xs:string" minOccurs="0"/>
+			<xs:element name="country" type="xs:string" minOccurs="0"/>
+			<xs:element name="whatfor" type="xs:string" minOccurs="0"/>
+			<xs:element name="classifier" type="xs:string" minOccurs="0"/>
+			<xs:element name="prodcontent" type="xs:string" minOccurs="0"/>
+			<xs:element name="changedate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="term" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="prdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="pradate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="status" type="xs:string" minOccurs="0"/>
+			<xs:element name="reason" type="xs:string" minOccurs="0"/>
+			<xs:element name="lastdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="lasteditor" type="xs:string" minOccurs="0"/>
+			<xs:element name="gln" type="xs:long" minOccurs="0"/>
+			<xs:element name="type" type="xs:string" minOccurs="0"/>
+			<xs:element name="tradeitemrbCollection" type="tns:tradeitemrb" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemhierarchy">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="qcompletelayerscontainedinti" type="xs:long" minOccurs="0"/>
+			<xs:element name="quantityoflayersperpallet" type="xs:long" minOccurs="0"/>
+			<xs:element name="qticontainedinacompletelayer" type="xs:long" minOccurs="0"/>
+			<xs:element name="quantityoftradeitemsperpallet" type="xs:long" minOccurs="0"/>
+			<xs:element name="qtiperpalletlayer" type="xs:long" minOccurs="0"/>
+			<xs:element name="quantityofinnerpack" type="xs:long" minOccurs="0"/>
+			<xs:element name="qnextleveltiwithininnerpack" type="xs:long" minOccurs="0"/>
+			<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemmarking">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="hasbatchnumber" type="xs:short" minOccurs="0"/>
+			<xs:element name="isnonsoldtradeitemreturnable" type="xs:short" minOccurs="0"/>
+			<xs:element name="istradeitemmarkedasrecyclable" type="xs:short" minOccurs="0"/>
+			<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemmeasurements">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="casingtareweight" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="casingtareweightuom" type="xs:string" minOccurs="0"/>
+			<xs:element name="genericingredient" type="xs:string" minOccurs="0"/>
+			<xs:element name="hasdisplayreadypackaging" type="xs:string" minOccurs="0"/>
+			<xs:element name="ingredientstrength" type="xs:string" minOccurs="0"/>
+			<xs:element name="isnetcontentdeclarindicated" type="xs:short" minOccurs="0"/>
+			<xs:element name="layerheight" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="layerheightuom" type="xs:string" minOccurs="0"/>
+			<xs:element name="pricecomparisoncontenttype" type="xs:string" minOccurs="0"/>
+			<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+			<xs:element name="diameterCollection" type="tns:diameter" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="grossweightCollection" type="tns:grossweight" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="heightCollection" type="tns:height" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="netweightCollection" type="tns:netweight" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="depthCollection" type="tns:depth" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="drainedweightCollection" type="tns:drainedweight" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="netcontentCollection" type="tns:netcontent" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="widthCollection" type="tns:width" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemrb">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="namettn" type="xs:string" minOccurs="0"/>
+			<xs:element name="okrb007code" type="xs:string" minOccurs="0"/>
+			<xs:element name="tnvedcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="supplierarticlenum" type="xs:string" minOccurs="0"/>
+			<xs:element name="okrb007path" type="xs:string" minOccurs="0"/>
+			<xs:element name="tnvedpath" type="xs:string" minOccurs="0"/>
+			<xs:element name="addmark" type="xs:string" minOccurs="0"/>
+			<xs:element name="lastbcdsyncdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="gtinblockdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="dateFlag" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="dateStartblock" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="dateEndblock" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="istradeitemimported" type="xs:short" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+			<xs:element name="tradeitemcertificate" type="tns:tradeitemcertificate" minOccurs="0"/>
+			<xs:element name="certificatenumberggr" type="tns:tradeitemggr" minOccurs="0"/>
+			<xs:element name="tscertificatenumber" type="tns:tradeitemtscertificate" minOccurs="0"/>
+			<xs:element name="tsdeclarationnumber" type="tns:tradeitemtsdeclaration" minOccurs="0"/>
+			<xs:element name="tsggrnumber" type="tns:tradeitemtsggr" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemrbspec">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="consist" type="xs:string" minOccurs="0"/>
+			<xs:element name="calorificvalue" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="nutritionalvalue" type="xs:string" minOccurs="0"/>
+			<xs:element name="expirationdate" type="xs:short" minOccurs="0"/>
+			<xs:element name="expirationtype" type="xs:string" minOccurs="0"/>
+			<xs:element name="minstoragetemperature" type="xs:string" minOccurs="0"/>
+			<xs:element name="maxstoragetemperature" type="xs:string" minOccurs="0"/>
+			<xs:element name="calorificvaluej" type="xs:decimal" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemsuppliers">
+		<xs:sequence>
+			<xs:element name="tradeitemsuppliersPK" type="tns:tradeitemsuppliersPK" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemsuppliersPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="gln" type="xs:long"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemtradechannel">
+		<xs:sequence>
+			<xs:element name="tradeitemtradechannelPK" type="tns:tradeitemtradechannelPK" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemtradechannelPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="tradeitemtradechannel" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemtscertificate">
+		<xs:sequence>
+			<xs:element name="certificatenumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="codeorganisation" type="xs:short" minOccurs="0"/>
+			<xs:element name="productname" type="xs:string" minOccurs="0"/>
+			<xs:element name="manufacturer" type="xs:string" minOccurs="0"/>
+			<xs:element name="declarant" type="xs:string" minOccurs="0"/>
+			<xs:element name="inspectioncontrol" type="xs:string" minOccurs="0"/>
+			<xs:element name="certificatedate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="term" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="prdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="pradate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="status" type="xs:string" minOccurs="0"/>
+			<xs:element name="reason" type="xs:string" minOccurs="0"/>
+			<xs:element name="sentdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="lastdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="lasteditor" type="xs:string" minOccurs="0"/>
+			<xs:element name="gln" type="xs:long" minOccurs="0"/>
+			<xs:element name="tradeitemrbCollection" type="tns:tradeitemrb" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemtsdeclaration">
+		<xs:sequence>
+			<xs:element name="declarationnumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="codeorganisation" type="xs:short" minOccurs="0"/>
+			<xs:element name="productname" type="xs:string" minOccurs="0"/>
+			<xs:element name="manufacturer" type="xs:string" minOccurs="0"/>
+			<xs:element name="declarant" type="xs:string" minOccurs="0"/>
+			<xs:element name="inspectioncontrol" type="xs:string" minOccurs="0"/>
+			<xs:element name="declarationdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="term" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="prdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="pradate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="status" type="xs:string" minOccurs="0"/>
+			<xs:element name="reason" type="xs:string" minOccurs="0"/>
+			<xs:element name="sentdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="lastdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="lasteditor" type="xs:string" minOccurs="0"/>
+			<xs:element name="gln" type="xs:long" minOccurs="0"/>
+			<xs:element name="tradeitemrbCollection" type="tns:tradeitemrb" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemtsggr">
+		<xs:sequence>
+			<xs:element name="certificatenumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="certificatedate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="app" type="xs:string" minOccurs="0"/>
+			<xs:element name="productname" type="xs:string" minOccurs="0"/>
+			<xs:element name="registrationnumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="declarant" type="xs:string" minOccurs="0"/>
+			<xs:element name="manufacturer" type="xs:string" minOccurs="0"/>
+			<xs:element name="country" type="xs:string" minOccurs="0"/>
+			<xs:element name="whatfor" type="xs:string" minOccurs="0"/>
+			<xs:element name="classifier" type="xs:string" minOccurs="0"/>
+			<xs:element name="prodcontent" type="xs:string" minOccurs="0"/>
+			<xs:element name="changedate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="term" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="prdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="pradate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="status" type="xs:string" minOccurs="0"/>
+			<xs:element name="reason" type="xs:string" minOccurs="0"/>
+			<xs:element name="lastdate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="lasteditor" type="xs:string" minOccurs="0"/>
+			<xs:element name="gln" type="xs:long" minOccurs="0"/>
+			<xs:element name="type" type="xs:string" minOccurs="0"/>
+			<xs:element name="tradeitemrbCollection" type="tns:tradeitemrb" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tradeitemunitindicator">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long" minOccurs="0"/>
+			<xs:element name="istradeitemabaseunit" type="xs:short" minOccurs="0"/>
+			<xs:element name="istradeitemaconsumerunit" type="xs:short" minOccurs="0"/>
+			<xs:element name="istradeitemadespatchunit" type="xs:short" minOccurs="0"/>
+			<xs:element name="istradeitemaninvoiceunit" type="xs:short" minOccurs="0"/>
+			<xs:element name="istradeitemanorderableunit" type="xs:short" minOccurs="0"/>
+			<xs:element name="istradeitemavariableunit" type="xs:short" minOccurs="0"/>
+			<xs:element name="pricebymeasuretype" type="xs:string" minOccurs="0"/>
+			<xs:element name="variabletradeitemtype" type="xs:string" minOccurs="0"/>
+			<xs:element name="tpneutraltiinformation" type="tns:tpneutraltiinformation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tvFeature">
+		<xs:sequence>
+			<xs:element name="tvFeaturePK" type="tns:tvFeaturePK" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tvFeaturePK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="televisionfeaturecode" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="userpools">
+		<xs:complexContent>
+			<xs:extension base="tns:tradeitemAddons">
+				<xs:sequence>
+					<xs:element name="userpoolsPK" type="tns:userpoolsPK" minOccurs="0"/>
+					<xs:element name="created" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="lastmodified" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="securityusers" type="tns:securityusers" minOccurs="0"/>
+					<xs:element name="userpoolscontentCollection" type="tns:userpoolscontent" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="userpoolsPK">
+		<xs:sequence>
+			<xs:element name="username" type="xs:string" minOccurs="0"/>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="userpoolscontent">
+		<xs:sequence>
+			<xs:element name="userpoolscontentPK" type="tns:userpoolscontentPK" minOccurs="0"/>
+			<xs:element name="userpools" type="tns:userpools" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="userpoolscontentPK">
+		<xs:sequence>
+			<xs:element name="username" type="xs:string" minOccurs="0"/>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="variant">
+		<xs:sequence>
+			<xs:element name="variantPK" type="tns:variantPK" minOccurs="0"/>
+			<xs:element name="variant" type="xs:string" minOccurs="0"/>
+			<xs:element ref="tns:tradeitem" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="variantPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="language" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="width">
+		<xs:sequence>
+			<xs:element name="widthPK" type="tns:widthPK" minOccurs="0"/>
+			<xs:element name="value" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="tradeitemmeasurements" type="tns:tradeitemmeasurements" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="widthPK">
+		<xs:sequence>
+			<xs:element name="globaltradeitemnumber" type="xs:long"/>
+			<xs:element name="unitofmeasure" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

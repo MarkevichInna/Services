@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca685cf3-d44c-4a43-864a-bf36fb8e7a39">
+  <name>КлассификаторБанков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Классификатор банков</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>HTTPService.BanksClassifierRequest</content>
+  <content>ScheduledJob.С_ЗаполнитьКлассификаторБанков</content>
+  <content>Constant.С_ДатаОбновленияКлассификаторБанков</content>
+  <content>Catalog.С_КлассификаторБанков</content>
+  <content>InformationRegister.С_РегистрацияКлассификаторБанков</content>
+  <parentSubsystem>Subsystem.Сервисы</parentSubsystem>
+</mdclass:Subsystem>

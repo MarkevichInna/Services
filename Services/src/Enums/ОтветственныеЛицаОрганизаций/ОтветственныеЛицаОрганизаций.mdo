@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="948e2142-2658-4f6e-8efc-c4dc7508e08c">
+  <producedTypes>
+    <refType typeId="408e79c1-e3fa-4081-8ca7-42dca5434173" valueTypeId="44394dec-c2d1-4442-b461-fcbbdb29b195"/>
+    <listType typeId="12bb5f78-8d2a-4e37-954b-cf813ce64be3" valueTypeId="5aadc0aa-ab04-46af-8518-3c9188b9429c"/>
+    <managerType typeId="76cebdc3-2ecb-4d95-b626-fe223fd70cf0" valueTypeId="768493c5-e353-4da2-9040-f41d9366d595"/>
+  </producedTypes>
+  <name>ОтветственныеЛицаОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ответственные лица организаций</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c49f3aa7-5320-49dc-8ee3-e2706dd01557">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b2699976-536d-421e-a8e6-74d3f071c2ef">
+    <name>ГлавныйБухгалтер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Главный бухгалтер</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="c2c74b2d-2317-4aa1-bbcf-9582181f0670">
+    <name>РуководительКадровойСлужбы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель кадровой службы</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="61ad9fdb-7af8-4967-9e65-c39a14f43dd0">
+    <name>Кассир</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кассир</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="3a6a718d-8ffb-47bd-bbc2-d3938039c28a">
+    <name>ОтветственныйЗаБухгалтерскиеРегистры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный за бухгалтерские регистры</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="9474cbea-1436-4a20-9eb4-3fe63e5dfe33">
+    <name>ОтветственныйЗаНалоговыеРегистры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный за налоговые регистры</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="495c33cc-0389-4e54-9c3f-b2ddc7bb74a2">
+    <name>УполномоченныйПредставитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уполномоченный представитель</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="64f04460-4270-421d-b541-e094534023fa">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b0f9d3ec-1390-4c68-b9bd-9e6e421bf41e">
+    <name>ОтветственныйЗаВУР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный за ВУР</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="080dc86d-3a2c-4f9e-93f6-0c5e6a4d0d8e">
+  <name>AddressClassifierUpdate</name>
+  <synonym>
+    <key>ru</key>
+    <value>Address classifier update</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://AddressClassifier</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.AddressClassifierXDTO</value>
+  </xdtoPackages>
+  <descriptorFileName>AddressClassifierUpdate.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="aea63c63-721a-46bd-961a-77d7bb50b3ba">
+    <name>AddressClassifierUpdateAlert</name>
+    <synonym>
+      <key>ru</key>
+      <value>Address classifier update alert</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>DateUpdate</name>
+      <nsUri>http://www.AddressClassifierUpdate</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>AddressClassifierUpdateAlert</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </operations>
+</mdclass:WebService>

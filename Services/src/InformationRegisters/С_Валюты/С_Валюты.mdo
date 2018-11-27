@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d33aaa23-a381-4d3f-a5e0-550811700956">
+  <producedTypes>
+    <selectionType typeId="0baee624-0c07-4a20-9ee9-e9a0f6d38bb0" valueTypeId="21b27249-4283-4891-af41-97e6c1cbd934"/>
+    <listType typeId="6869ae97-c4cd-4a4b-bd37-c1df184c0fb3" valueTypeId="54a85424-6da2-45f4-ad75-5f40ea1205a1"/>
+    <managerType typeId="c491d305-2ca4-4813-b9b6-c711e78877c1" valueTypeId="c0386014-98ec-46ab-bc0d-ff7e381ac8d0"/>
+    <recordSetType typeId="c73f563c-6db9-4306-aaad-4c93d6b11974" valueTypeId="74d36d4f-f0e1-4067-b850-0b9fb46b3c9e"/>
+    <recordKeyType typeId="2188d509-b7a5-4d97-8703-8e7428edaac9" valueTypeId="9177f956-5c82-4d86-9bd5-2563f2faf7ac"/>
+    <recordType typeId="82785ad5-9a1b-49c9-b776-a6e9acdbeff5" valueTypeId="6097d730-1e2c-40de-a7e6-a527c3b8f8cc"/>
+    <recordManagerType typeId="ea6ba3d5-fc52-4906-baa6-a61db0470857" valueTypeId="0c1205f9-f85d-450b-a31d-72366f5ff4c5"/>
+  </producedTypes>
+  <name>С_Валюты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внутренние коды валют</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="9f76371e-d28f-4255-8d7c-9aca3c2a887a">
+    <name>Cur_Code</name>
+    <synonym>
+      <key>ru</key>
+      <value>Cur code</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="29a79137-99f4-4fc9-ac9d-2e6b142ef05c">
+    <name>Cur_Id</name>
+    <synonym>
+      <key>ru</key>
+      <value>Cur id</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="028e6a8b-c127-4adc-b9ce-3df3a1125054">
+    <name>Cur_Scale</name>
+    <synonym>
+      <key>ru</key>
+      <value>Cur scale</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

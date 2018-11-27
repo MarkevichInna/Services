@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad3c760b-50a1-49c4-8dae-cbcb0852de80">
+  <name>AddressClassifierRequest</name>
+  <synonym>
+    <key>ru</key>
+    <value>Address classifier request</value>
+  </synonym>
+  <comment></comment>
+  <rootURL>AddressClassifier</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="ad735779-190d-4a93-82cf-b600cfea5fad">
+    <name>AddressClassifier</name>
+    <synonym>
+      <key>ru</key>
+      <value>Address classifier</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="3adeddda-ce66-4370-8f7f-2462a20549d8">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>AddressClassifierPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

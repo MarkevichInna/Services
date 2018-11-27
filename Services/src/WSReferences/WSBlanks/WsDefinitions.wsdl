@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://www.bisc.by/webservices"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="http://www.bisc.by/webservices"
+		name="FindBlankWSSoap"
+		targetNamespace="http://www.bisc.by/webservices">
+	<types>
+		<xs:schema xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+				xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+				xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
+				xmlns:wsa10="http://www.w3.org/2005/08/addressing"
+				xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+				xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy"
+				xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				elementFormDefault="qualified"
+				targetNamespace="http://www.bisc.by/webservices">
+			<xs:element name="FindBlankWS">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0"
+								maxOccurs="1"
+								name="pTB"
+								type="xs:long"/>
+						<xs:element minOccurs="1"
+								maxOccurs="1"
+								name="pTBSpecified"
+								type="xs:boolean"/>
+						<xs:element minOccurs="0"
+								maxOccurs="1"
+								name="pSB"
+								type="xs:string"/>
+						<xs:element minOccurs="0"
+								maxOccurs="1"
+								name="pNB"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="FindBlankWSResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0"
+								maxOccurs="1"
+								name="FindBlankWSResult"
+								type="xsd1:WSAnswer"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:complexType name="WSAnswer">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="IsFound"
+							type="xs:long"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Rel"
+							type="xsd1:ArrayOfWSRel"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Pas"
+							type="xsd1:ArrayOfWSPas"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Sp"
+							type="xsd1:ArrayOfWSSp"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ArrayOfWSRel">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="WSRel"
+							nillable="true"
+							type="xsd1:WSRel"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="WSRel">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Date"
+							type="xs:string"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Name"
+							type="xs:string"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="UNP"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ArrayOfWSPas">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="WSPas"
+							nillable="true"
+							type="xsd1:WSPas"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="WSPas">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Date"
+							type="xs:string"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Name"
+							type="xs:string"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="UNP"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ArrayOfWSSp">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="WSSp"
+							nillable="true"
+							type="xsd1:WSSp"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="WSSp">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Date"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="FindBlankWSnTB">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0"
+								maxOccurs="1"
+								name="pSB"
+								type="xs:string"/>
+						<xs:element minOccurs="0"
+								maxOccurs="1"
+								name="pNB"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="FindBlankWSnTBResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0"
+								maxOccurs="1"
+								name="FindBlankWSnTBResult"
+								type="xsd1:WSAnswerList"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:complexType name="WSAnswerList">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="IsFound"
+							type="xs:long"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Blanks"
+							type="xsd1:ArrayOfWSAnswer"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="BlanksTB"
+							type="xsd1:ArrayOfLong"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ArrayOfWSAnswer">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="WSAnswer"
+							nillable="true"
+							type="xsd1:WSAnswer"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ArrayOfLong">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="BlanksTBItem"
+							nillable="true"
+							type="xs:long"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="GetTBListWS">
+				<xs:complexType/>
+			</xs:element>
+			<xs:element name="GetTBListWSResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0"
+								maxOccurs="1"
+								name="GetTBListWSResult"
+								type="xsd1:WSTBList"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:complexType name="WSTBList">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="TBList"
+							type="xsd1:ArrayOfWSTBItem"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ArrayOfWSTBItem">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="WSTBItem"
+							nillable="true"
+							type="xsd1:WSTBItem"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="WSTBItem">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Format"
+							type="xs:string"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Kod"
+							type="xs:long"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Kompl"
+							type="xs:string"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Name"
+							type="xs:string"/>
+					<xs:element minOccurs="0"
+							maxOccurs="1"
+							name="Nominal"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:schema>
+	</types>
+	<message name="FindBlankWSSoap_FindBlankWS_InputMessage">
+		<part name="parameters"
+				element="tns:FindBlankWS"/>
+	</message>
+	<message name="FindBlankWSSoap_FindBlankWS_OutputMessage">
+		<part name="parameters"
+				element="tns:FindBlankWSResponse"/>
+	</message>
+	<message name="FindBlankWSSoap_FindBlankWSnTB_InputMessage">
+		<part name="parameters"
+				element="tns:FindBlankWSnTB"/>
+	</message>
+	<message name="FindBlankWSSoap_FindBlankWSnTB_OutputMessage">
+		<part name="parameters"
+				element="tns:FindBlankWSnTBResponse"/>
+	</message>
+	<message name="FindBlankWSSoap_GetTBListWS_InputMessage">
+		<part name="parameters"
+				element="tns:GetTBListWS"/>
+	</message>
+	<message name="FindBlankWSSoap_GetTBListWS_OutputMessage">
+		<part name="parameters"
+				element="tns:GetTBListWSResponse"/>
+	</message>
+	<portType name="FindBlankWSSoap">
+		<operation name="FindBlankWS">
+			<input name="FindBlankWSRequest"
+					message="tns:FindBlankWSSoap_FindBlankWS_InputMessage"/>
+			<output name="FindBlankWSResponse"
+					message="tns:FindBlankWSSoap_FindBlankWS_OutputMessage"/>
+		</operation>
+		<operation name="FindBlankWSnTB">
+			<input name="FindBlankWSnTBRequest"
+					message="tns:FindBlankWSSoap_FindBlankWSnTB_InputMessage"/>
+			<output name="FindBlankWSnTBResponse"
+					message="tns:FindBlankWSSoap_FindBlankWSnTB_OutputMessage"/>
+		</operation>
+		<operation name="GetTBListWS">
+			<input name="GetTBListWSRequest"
+					message="tns:FindBlankWSSoap_GetTBListWS_InputMessage"/>
+			<output name="GetTBListWSResponse"
+					message="tns:FindBlankWSSoap_GetTBListWS_OutputMessage"/>
+		</operation>
+	</portType>
+	<binding name="BasicHttpBinding_FindBlankWSSoap"
+			type="tns:FindBlankWSSoap">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="FindBlankWS">
+			<soapbind:operation style="document"
+					soapAction="http://www.bisc.by/webservices/WEB.WebServ.FindBlankWS"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="FindBlankWSnTB">
+			<soapbind:operation style="document"
+					soapAction="http://www.bisc.by/webservices/WEB.WebServ.FindBlankWSnTB"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetTBListWS">
+			<soapbind:operation style="document"
+					soapAction="http://www.bisc.by/webservices/WEB.WebServ.GetTBListWS"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="FindBlankWSSoap">
+		<port name="BasicHttpBinding_FindBlankWSSoap"
+				binding="tns:BasicHttpBinding_FindBlankWSSoap">
+			<soapbind:address location="http://ws.blank.bisc.by/FindBlankWSSoap.svc"/>
+		</port>
+	</service>
+</definitions>

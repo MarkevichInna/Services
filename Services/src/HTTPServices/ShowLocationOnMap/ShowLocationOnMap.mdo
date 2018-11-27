@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9320bee9-4ceb-4f49-ad56-8d9dda4cd977">
+  <name>ShowLocationOnMap</name>
+  <synonym>
+    <key>ru</key>
+    <value>Show location on map</value>
+  </synonym>
+  <comment></comment>
+  <rootURL>ShowLocation</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="fe621c68-1818-4cf9-87d6-81da091e583b">
+    <name>ShowLocation</name>
+    <synonym>
+      <key>ru</key>
+      <value>Show location</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="8b610d34-048d-4a8e-a3ab-255867959d86">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>ShowLocationPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

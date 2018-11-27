@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b44e35fa-d6d2-4ebe-8015-f885f8bc128a">
+  <name>OrgInfoUpdate</name>
+  <synonym>
+    <key>ru</key>
+    <value>Org info update</value>
+  </synonym>
+  <comment></comment>
+  <rootURL>OrgInfo</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="cff7b753-9c20-4d97-b928-7ace7bddec4d">
+    <name>OrgInfo</name>
+    <synonym>
+      <key>ru</key>
+      <value>Org info</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="ae17b3d2-85b1-483c-9f58-68b400740a9f">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>OrgInfoPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

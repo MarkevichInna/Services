@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0729a294-1ba2-48cd-8dd2-3e1faa18b767">
+  <producedTypes>
+    <selectionType typeId="176a4aa0-06d3-4f4e-bd87-f589ceeddbd0" valueTypeId="856a46d7-46b1-49aa-8764-6f9e4216be11"/>
+    <listType typeId="f2c33be2-7483-46f4-a3f6-3167ea192521" valueTypeId="a3324252-41cc-4d61-873a-28a7c3e87a81"/>
+    <managerType typeId="3d034a6d-b422-45d3-bb81-d8516e1f298f" valueTypeId="73fbe125-dea5-4bc1-b07d-05ffc378501a"/>
+    <recordSetType typeId="1c6bd177-4bbe-46cb-a5af-8c200b940715" valueTypeId="1d7200a7-b920-4f53-9c72-2c5d3894d98a"/>
+    <recordKeyType typeId="511899f9-434d-4527-bbb7-b9dfdfaefcb1" valueTypeId="c524c83a-f848-41a3-98d6-45782580e789"/>
+    <recordType typeId="780ce0ba-e7ed-40c5-baa4-4db1b5808edf" valueTypeId="fa8281f2-40da-4b54-a212-65cb7403e182"/>
+    <recordManagerType typeId="bdccb309-7978-4cb4-a8b8-cf751465b938" valueTypeId="65fcf942-fa9d-4c61-a324-28667c09aa9c"/>
+  </producedTypes>
+  <name>С_СвободныйРеестрЮричидескихЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>С свободный реестр юричидеских лиц</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="6eea5659-80b8-484a-996a-7542d17b6fa8">
+    <name>УНП</name>
+    <synonym>
+      <key>ru</key>
+      <value>УНП</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

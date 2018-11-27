@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e40a0d8-43ef-444a-8feb-14641cb5f91e">
+  <producedTypes>
+    <refType typeId="76e556bc-29bd-4a3b-bfb2-cf4bdff2e23f" valueTypeId="1d1b3628-2ddd-41b4-80c3-e2c683e1d5c0"/>
+    <listType typeId="194db3c0-40f2-471e-b65e-c9af0bd1a01e" valueTypeId="8fdd1a21-c879-400c-b51f-08cc5612cdf0"/>
+    <managerType typeId="c44c6087-8dd5-4d01-9092-b427e9d73fa8" valueTypeId="0c9715af-eb8d-4823-819a-1ec2e5a35750"/>
+  </producedTypes>
+  <name>ЮрФизЛицо</name>
+  <synonym>
+    <key>ru</key>
+    <value>Юр/Физлицо</value>
+  </synonym>
+  <comment>Определяет, является ли организация или контрагент юридическим лицом или нет.</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4405dfea-2270-4fb9-81ed-a891fdc767d9">
+    <name>ЮрЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Юридическое лицо</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="67c39a7a-09c7-4279-b28f-1b346bca55c8">
+    <name>ФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="c78377eb-ab4f-41e5-959e-03a49f04b41c">
+    <name>ЮрЛицоНеРезидент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Юр. лицо, за пределами РБ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f4e1fc86-1824-49f3-8d7d-2da7743c781d">
+    <name>ИндивидуальныйПредприниматель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Индивидуальный предприниматель</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

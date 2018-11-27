@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="119fa8b0-c1a3-4923-a48e-fe9505c4b10c">
+  <name>СхемаGlobalservice</name>
+  <synonym>
+    <key>ru</key>
+    <value>Схема globalservice</value>
+  </synonym>
+  <comment></comment>
+  <templateType>TextDocument</templateType>
+</mdclass:CommonTemplate>

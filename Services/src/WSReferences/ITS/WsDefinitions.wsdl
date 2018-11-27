@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://api.repository.onec.ru"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="http://api.repository.onec.ru"
+		name="PartnerSubscriptionApiServiceImplService"
+		targetNamespace="http://api.repository.onec.ru">
+	<types>
+		<xs:schema xmlns:ns1="http://schemas.xmlsoap.org/soap/http"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				attributeFormDefault="unqualified"
+				elementFormDefault="unqualified"
+				targetNamespace="http://api.repository.onec.ru">
+			<xs:element name="checkItsByLogin"
+					type="xsd1:checkItsByLogin"/>
+			<xs:element name="checkItsByLoginResponse"
+					type="xsd1:checkItsByLoginResponse"/>
+			<xs:element name="checkItsByRegNum"
+					type="xsd1:checkItsByRegNum"/>
+			<xs:element name="checkItsByRegNumResponse"
+					type="xsd1:checkItsByRegNumResponse"/>
+			<xs:complexType name="checkItsByLogin">
+				<xs:sequence>
+					<xs:element form="qualified"
+							minOccurs="0"
+							name="loginList"
+							type="xsd1:loginList"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="loginList">
+				<xs:sequence>
+					<xs:element form="qualified"
+							maxOccurs="unbounded"
+							minOccurs="0"
+							name="loginList"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="checkItsByLoginResponse">
+				<xs:sequence>
+					<xs:element form="qualified"
+							maxOccurs="unbounded"
+							minOccurs="0"
+							name="return"
+							type="xsd1:subscriptionCheckResult"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="subscriptionCheckResult">
+				<xs:sequence>
+					<xs:element form="qualified"
+							name="status"
+							type="xs:string"/>
+					<xs:element form="qualified"
+							name="code"
+							type="xs:int"/>
+					<xs:element form="qualified"
+							name="description"
+							type="xs:string"/>
+					<xs:element form="qualified"
+							name="element"
+							type="xs:string"/>
+					<xs:element form="qualified"
+							maxOccurs="unbounded"
+							minOccurs="0"
+							name="subscriptionInfoList"
+							type="xsd1:subscriptionInfo"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="subscriptionInfo">
+				<xs:sequence>
+					<xs:element form="qualified"
+							minOccurs="0"
+							name="description"
+							type="xs:string"/>
+					<xs:element form="qualified"
+							minOccurs="0"
+							name="startDate"
+							type="xs:dateTime"/>
+					<xs:element form="qualified"
+							minOccurs="0"
+							name="endDate"
+							type="xs:dateTime"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="checkItsByRegNum">
+				<xs:sequence>
+					<xs:element form="qualified"
+							minOccurs="0"
+							name="regNumList"
+							type="xsd1:regNumList"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="regNumList">
+				<xs:sequence>
+					<xs:element form="qualified"
+							maxOccurs="unbounded"
+							minOccurs="0"
+							name="regNumList"
+							type="xs:long"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="checkItsByRegNumResponse">
+				<xs:sequence>
+					<xs:element form="qualified"
+							maxOccurs="unbounded"
+							minOccurs="0"
+							name="return"
+							type="xsd1:subscriptionCheckResult"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="AuthorizationFailedException"
+					type="xsd1:AuthorizationFailedException"/>
+			<xs:complexType name="AuthorizationFailedException">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							name="message"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="MethodAccessDeniedException"
+					type="xsd1:MethodAccessDeniedException"/>
+			<xs:complexType name="MethodAccessDeniedException">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							name="message"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:schema>
+	</types>
+	<message name="checkItsByRegNum">
+		<part name="parameters"
+				element="tns:checkItsByRegNum"/>
+	</message>
+	<message name="MethodAccessDeniedException">
+		<part name="MethodAccessDeniedException"
+				element="tns:MethodAccessDeniedException"/>
+	</message>
+	<message name="checkItsByLoginResponse">
+		<part name="parameters"
+				element="tns:checkItsByLoginResponse"/>
+	</message>
+	<message name="checkItsByRegNumResponse">
+		<part name="parameters"
+				element="tns:checkItsByRegNumResponse"/>
+	</message>
+	<message name="checkItsByLogin">
+		<part name="parameters"
+				element="tns:checkItsByLogin"/>
+	</message>
+	<message name="AuthorizationFailedException">
+		<part name="AuthorizationFailedException"
+				element="tns:AuthorizationFailedException"/>
+	</message>
+	<portType name="PartnerSubscriptionApiService">
+		<operation name="checkItsByLogin">
+			<input name="checkItsByLogin"
+					message="tns:checkItsByLogin"/>
+			<output name="checkItsByLoginResponse"
+					message="tns:checkItsByLoginResponse"/>
+			<fault name="MethodAccessDeniedException"
+					message="tns:MethodAccessDeniedException"/>
+			<fault name="AuthorizationFailedException"
+					message="tns:AuthorizationFailedException"/>
+		</operation>
+		<operation name="checkItsByRegNum">
+			<input name="checkItsByRegNum"
+					message="tns:checkItsByRegNum"/>
+			<output name="checkItsByRegNumResponse"
+					message="tns:checkItsByRegNumResponse"/>
+			<fault name="MethodAccessDeniedException"
+					message="tns:MethodAccessDeniedException"/>
+			<fault name="AuthorizationFailedException"
+					message="tns:AuthorizationFailedException"/>
+		</operation>
+	</portType>
+	<binding name="PartnerSubscriptionApiServiceImplServiceSoapBinding"
+			type="tns:PartnerSubscriptionApiService">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="checkItsByLogin">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="MethodAccessDeniedException">
+				<soapbind:fault name="MethodAccessDeniedException"
+						use="literal"/>
+			</fault>
+			<fault name="AuthorizationFailedException">
+				<soapbind:fault name="AuthorizationFailedException"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="checkItsByRegNum">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="MethodAccessDeniedException">
+				<soapbind:fault name="MethodAccessDeniedException"
+						use="literal"/>
+			</fault>
+			<fault name="AuthorizationFailedException">
+				<soapbind:fault name="AuthorizationFailedException"
+						use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="PartnerSubscriptionApiServiceImplService">
+		<documentation>Partner subscription api service</documentation>
+		<port name="PartnerSubscriptionApiServiceImplPort"
+				binding="tns:PartnerSubscriptionApiServiceImplServiceSoapBinding">
+			<soapbind:address location="https://partner-api.1c.ru/api/ws/subscription"/>
+		</port>
+	</service>
+</definitions>

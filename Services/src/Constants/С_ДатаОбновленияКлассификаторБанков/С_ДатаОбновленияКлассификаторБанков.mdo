@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3a684717-0578-4728-a4cd-d804675f915b">
+  <producedTypes>
+    <managerType typeId="7a4bb660-68b7-4750-8d80-f805515951da" valueTypeId="1cb9dbcb-4d3b-4cec-97ec-3519cae2d8a6"/>
+    <valueManagerType typeId="12392ff6-04d5-4344-8a95-eaa9094dcdad" valueTypeId="c0da03b5-a6d8-4f8f-a7ac-9968588cc674"/>
+  </producedTypes>
+  <name>С_ДатаОбновленияКлассификаторБанков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата обновления классификатор банков</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

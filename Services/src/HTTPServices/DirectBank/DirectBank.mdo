@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e071298-d7e6-4ce6-b540-4cf236b0d951">
+  <name>DirectBank</name>
+  <synonym>
+    <key>ru</key>
+    <value>Direct bank</value>
+  </synonym>
+  <comment></comment>
+  <rootURL>DirectBank</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="17ff3159-2489-411e-ad45-a4144a77b1b2">
+    <name>DirectBank</name>
+    <synonym>
+      <key>ru</key>
+      <value>Direct bank</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="a8a5b5a9-b188-4316-9e34-b2e73f30cbd8">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>DirectBankPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

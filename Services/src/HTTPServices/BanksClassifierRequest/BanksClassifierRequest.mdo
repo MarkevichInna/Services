@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="99f45ae4-7a3f-4371-93cf-0c0c8b6c2372">
+  <name>BanksClassifierRequest</name>
+  <synonym>
+    <key>ru</key>
+    <value>ClassifierBanksRequest</value>
+  </synonym>
+  <comment></comment>
+  <rootURL>BanksClassifier</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="d23eab48-111d-4952-b75f-81bd224ebcde">
+    <name>BanksClassifier</name>
+    <synonym>
+      <key>ru</key>
+      <value>ClassifierBanks</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="9ac57422-a362-4d31-9373-9651c9dabe37">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>POSTRequest</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

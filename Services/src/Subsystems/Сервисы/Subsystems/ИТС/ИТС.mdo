@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="64f88a6d-649b-4503-a506-b5ed1851f09b">
+  <name>ИТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИТС</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.РегистрацияИТС</content>
+  <content>CommonCommand.ПанельОтчетовАдминистрирование</content>
+  <content>Report.СведенияОПользователях</content>
+  <content>Report.ОтчетНовыеПользователи2</content>
+  <content>Report.ОтчетНовыеПользователи</content>
+  <content>HTTPService.GetServices</content>
+  <content>HTTPService.CheckRegistration</content>
+  <content>CommonModule.С_ИТССервер</content>
+  <content>CommonModule.С_ИТСМеждународныйСервер</content>
+  <content>InformationRegister.С_РегистрацияИТС</content>
+  <content>CommonModule.С_ИТССервисыСлужебныеПроцедурыФункции</content>
+  <content>CommonModule.С_ОбновлениеРегистрацииИТССервер</content>
+  <content>ScheduledJob.С_ОбновлениеИТС</content>
+  <parentSubsystem>Subsystem.Сервисы</parentSubsystem>
+</mdclass:Subsystem>

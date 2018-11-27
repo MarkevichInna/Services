@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="048a451d-8d2f-476c-93e8-ae8502c59e98">
+  <producedTypes>
+    <managerType typeId="eef481c6-9743-434c-b87f-9bfe99f161a3" valueTypeId="a441b62c-bc4f-4678-8504-be98938915fb"/>
+    <valueManagerType typeId="e143dc9f-09e7-4091-a636-c9d5fff5fe6f" valueTypeId="315c49a1-081d-4452-ade7-aaf027dbc6c1"/>
+  </producedTypes>
+  <name>ПрофильБезопасностиИнформационнойБазы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Профиль безопасности информационной базы</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>DefinedType.БезопасныйРежим</types>
+  </type>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

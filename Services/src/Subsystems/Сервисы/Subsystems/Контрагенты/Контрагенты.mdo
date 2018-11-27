@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="94ce874f-47e4-426c-a6d8-8131941dbac7">
+  <name>Контрагенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контрагенты</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.С_КонтрагентыСервер</content>
+  <content>ScheduledJob.С_ЗагрузкаФайлаИзМНС</content>
+  <content>ScheduledJob.С_ЗаполнитьРеестрПравонарушений</content>
+  <content>Constant.С_ДатаОбновленияРеестраПравонарушений</content>
+  <content>Catalog.С_ВидыКонтактнойИнформации</content>
+  <content>Catalog.С_Партнеры</content>
+  <content>InformationRegister.С_РеестрПравонарушений</content>
+  <subsystems>ЕГР</subsystems>
+  <subsystems>Банкроты</subsystems>
+  <subsystems>СвободныйРеестрЮЛ</subsystems>
+  <parentSubsystem>Subsystem.Сервисы</parentSubsystem>
+</mdclass:Subsystem>

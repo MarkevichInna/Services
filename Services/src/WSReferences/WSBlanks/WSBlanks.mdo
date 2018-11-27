@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WSReference xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef43cddf-b93d-4666-8325-807706922865">
+  <producedTypes>
+    <managerType typeId="fd8fd891-bb0c-4d43-82cf-288411ae610d" valueTypeId="40fb6d07-fa27-4c7f-b832-7e10ba1ad8c8"/>
+  </producedTypes>
+  <name>WSBlanks</name>
+  <synonym>
+    <key>ru</key>
+    <value>WSBlanks</value>
+  </synonym>
+  <comment></comment>
+  <locationURL>http://ws.blank.bisc.by/FindBlankWSSoap.svc?wsdl</locationURL>
+</mdclass:WSReference>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9462f6a3-cf08-4995-a286-7c3e1904ef9d">
+  <name>SearchTradeitemsByGLNAndModifiedTime</name>
+  <synonym>
+    <key>ru</key>
+    <value>Search tradeitems by GLNAnd modified time</value>
+  </synonym>
+  <comment></comment>
+  <templateType>TextDocument</templateType>
+</mdclass:CommonTemplate>

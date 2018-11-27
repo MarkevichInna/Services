@@ -1,0 +1,1061 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://www.nbrb.by/"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="http://www.nbrb.by/"
+		targetNamespace="http://www.nbrb.by/">
+	<types>
+		<s:schema xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+				xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+				xmlns:s="http://www.w3.org/2001/XMLSchema"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+				xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+				xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				elementFormDefault="qualified"
+				targetNamespace="http://www.nbrb.by/">
+			<s:element name="CurrenciesRefDaily">
+				<s:complexType/>
+			</s:element>
+			<s:element name="CurrenciesRefDailyResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="CurrenciesRefDailyResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="CurrenciesRefMonthly">
+				<s:complexType/>
+			</s:element>
+			<s:element name="CurrenciesRefMonthlyResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="CurrenciesRefMonthlyResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="StartDate">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Periodicity"
+								type="s:int"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="StartDateResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="StartDateResult"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="LastDailyExRatesDate">
+				<s:complexType/>
+			</s:element>
+			<s:element name="LastDailyExRatesDateResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="LastDailyExRatesDateResult"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="LastMonthlyExRatesDate">
+				<s:complexType/>
+			</s:element>
+			<s:element name="LastMonthlyExRatesDateResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="LastMonthlyExRatesDateResult"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ExRatesDaily">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="onDate"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ExRatesDailyResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="ExRatesDailyResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ExRatesMonthly">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="onDate"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ExRatesMonthlyResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="ExRatesMonthlyResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ExRatesDyn">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="curId"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="fromDate"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="toDate"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="ExRatesDynResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="ExRatesDynResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="CurrenciesRef">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="Periodicity"
+								type="s:int"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="CurrenciesRefResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="CurrenciesRefResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="MetalsLastDate">
+				<s:complexType/>
+			</s:element>
+			<s:element name="MetalsLastDateResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="MetalsLastDateResult"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="MetalsRef">
+				<s:complexType/>
+			</s:element>
+			<s:element name="MetalsRefResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="MetalsRefResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="MetalsPrices">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="MetalId"
+								type="s:int"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="fromDate"
+								type="s:dateTime"/>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="toDate"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="MetalsPricesResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="MetalsPricesResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="IngotsPrices">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="onDate"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="IngotsPricesResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="IngotsPricesResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="IngotsLastDate">
+				<s:complexType/>
+			</s:element>
+			<s:element name="IngotsLastDateResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="IngotsLastDateResult"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="StockAddRates">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="onDate"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="StockAddRatesResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="StockAddRatesResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="StockAddRatesLastDate">
+				<s:complexType/>
+			</s:element>
+			<s:element name="StockAddRatesLastDateResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="StockAddRatesLastDateResult"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="RefRateOnDate">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1"
+								maxOccurs="1"
+								name="onDate"
+								type="s:dateTime"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="RefRateOnDateResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="RefRateOnDateResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="RefRateDyn">
+				<s:complexType/>
+			</s:element>
+			<s:element name="RefRateDynResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0"
+								maxOccurs="1"
+								name="RefRateDynResult">
+							<s:complexType>
+								<s:sequence>
+									<s:element ref="s:schema"/>
+									<s:any/>
+								</s:sequence>
+							</s:complexType>
+						</s:element>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+		</s:schema>
+	</types>
+	<message name="CurrenciesRefDailySoapIn">
+		<part name="parameters"
+				element="tns:CurrenciesRefDaily"/>
+	</message>
+	<message name="CurrenciesRefDailySoapOut">
+		<part name="parameters"
+				element="tns:CurrenciesRefDailyResponse"/>
+	</message>
+	<message name="CurrenciesRefMonthlySoapIn">
+		<part name="parameters"
+				element="tns:CurrenciesRefMonthly"/>
+	</message>
+	<message name="CurrenciesRefMonthlySoapOut">
+		<part name="parameters"
+				element="tns:CurrenciesRefMonthlyResponse"/>
+	</message>
+	<message name="StartDateSoapIn">
+		<part name="parameters"
+				element="tns:StartDate"/>
+	</message>
+	<message name="StartDateSoapOut">
+		<part name="parameters"
+				element="tns:StartDateResponse"/>
+	</message>
+	<message name="LastDailyExRatesDateSoapIn">
+		<part name="parameters"
+				element="tns:LastDailyExRatesDate"/>
+	</message>
+	<message name="LastDailyExRatesDateSoapOut">
+		<part name="parameters"
+				element="tns:LastDailyExRatesDateResponse"/>
+	</message>
+	<message name="LastMonthlyExRatesDateSoapIn">
+		<part name="parameters"
+				element="tns:LastMonthlyExRatesDate"/>
+	</message>
+	<message name="LastMonthlyExRatesDateSoapOut">
+		<part name="parameters"
+				element="tns:LastMonthlyExRatesDateResponse"/>
+	</message>
+	<message name="ExRatesDailySoapIn">
+		<part name="parameters"
+				element="tns:ExRatesDaily"/>
+	</message>
+	<message name="ExRatesDailySoapOut">
+		<part name="parameters"
+				element="tns:ExRatesDailyResponse"/>
+	</message>
+	<message name="ExRatesMonthlySoapIn">
+		<part name="parameters"
+				element="tns:ExRatesMonthly"/>
+	</message>
+	<message name="ExRatesMonthlySoapOut">
+		<part name="parameters"
+				element="tns:ExRatesMonthlyResponse"/>
+	</message>
+	<message name="ExRatesDynSoapIn">
+		<part name="parameters"
+				element="tns:ExRatesDyn"/>
+	</message>
+	<message name="ExRatesDynSoapOut">
+		<part name="parameters"
+				element="tns:ExRatesDynResponse"/>
+	</message>
+	<message name="CurrenciesRefSoapIn">
+		<part name="parameters"
+				element="tns:CurrenciesRef"/>
+	</message>
+	<message name="CurrenciesRefSoapOut">
+		<part name="parameters"
+				element="tns:CurrenciesRefResponse"/>
+	</message>
+	<message name="MetalsLastDateSoapIn">
+		<part name="parameters"
+				element="tns:MetalsLastDate"/>
+	</message>
+	<message name="MetalsLastDateSoapOut">
+		<part name="parameters"
+				element="tns:MetalsLastDateResponse"/>
+	</message>
+	<message name="MetalsRefSoapIn">
+		<part name="parameters"
+				element="tns:MetalsRef"/>
+	</message>
+	<message name="MetalsRefSoapOut">
+		<part name="parameters"
+				element="tns:MetalsRefResponse"/>
+	</message>
+	<message name="MetalsPricesSoapIn">
+		<part name="parameters"
+				element="tns:MetalsPrices"/>
+	</message>
+	<message name="MetalsPricesSoapOut">
+		<part name="parameters"
+				element="tns:MetalsPricesResponse"/>
+	</message>
+	<message name="IngotsPricesSoapIn">
+		<part name="parameters"
+				element="tns:IngotsPrices"/>
+	</message>
+	<message name="IngotsPricesSoapOut">
+		<part name="parameters"
+				element="tns:IngotsPricesResponse"/>
+	</message>
+	<message name="IngotsLastDateSoapIn">
+		<part name="parameters"
+				element="tns:IngotsLastDate"/>
+	</message>
+	<message name="IngotsLastDateSoapOut">
+		<part name="parameters"
+				element="tns:IngotsLastDateResponse"/>
+	</message>
+	<message name="StockAddRatesSoapIn">
+		<part name="parameters"
+				element="tns:StockAddRates"/>
+	</message>
+	<message name="StockAddRatesSoapOut">
+		<part name="parameters"
+				element="tns:StockAddRatesResponse"/>
+	</message>
+	<message name="StockAddRatesLastDateSoapIn">
+		<part name="parameters"
+				element="tns:StockAddRatesLastDate"/>
+	</message>
+	<message name="StockAddRatesLastDateSoapOut">
+		<part name="parameters"
+				element="tns:StockAddRatesLastDateResponse"/>
+	</message>
+	<message name="RefRateOnDateSoapIn">
+		<part name="parameters"
+				element="tns:RefRateOnDate"/>
+	</message>
+	<message name="RefRateOnDateSoapOut">
+		<part name="parameters"
+				element="tns:RefRateOnDateResponse"/>
+	</message>
+	<message name="RefRateDynSoapIn">
+		<part name="parameters"
+				element="tns:RefRateDyn"/>
+	</message>
+	<message name="RefRateDynSoapOut">
+		<part name="parameters"
+				element="tns:RefRateDynResponse"/>
+	</message>
+	<portType name="ExRatesSoap">
+		<operation name="CurrenciesRefDaily">
+			<documentation>&lt;span style="color:red"&gt;Устаревший метод. Будет поддерживаться до конца 2011 года&lt;/span&gt;</documentation>
+			<input name="CurrenciesRefDailyRequest"
+					message="tns:CurrenciesRefDailySoapIn"/>
+			<output name="CurrenciesRefDailyResponse"
+					message="tns:CurrenciesRefDailySoapOut"/>
+		</operation>
+		<operation name="CurrenciesRefMonthly">
+			<documentation>&lt;span style="color:red"&gt;Устаревший метод. Будет поддерживаться до конца 2011 года&lt;/span&gt;</documentation>
+			<input name="CurrenciesRefMonthlyRequest"
+					message="tns:CurrenciesRefMonthlySoapIn"/>
+			<output name="CurrenciesRefMonthlyResponse"
+					message="tns:CurrenciesRefMonthlySoapOut"/>
+		</operation>
+		<operation name="StartDate">
+			<documentation>Начальная дата установления Национальным банком Республики Беларусь официального курса белорусского рубля по отношению к иностранным валютам</documentation>
+			<input name="StartDateRequest"
+					message="tns:StartDateSoapIn"/>
+			<output name="StartDateResponse"
+					message="tns:StartDateSoapOut"/>
+		</operation>
+		<operation name="LastDailyExRatesDate">
+			<documentation>Последняя дата установления Национальным банком Республики Беларусь официального курса белорусского рубля по отношению к иностранным валютам на ежедневной основе</documentation>
+			<input name="LastDailyExRatesDateRequest"
+					message="tns:LastDailyExRatesDateSoapIn"/>
+			<output name="LastDailyExRatesDateResponse"
+					message="tns:LastDailyExRatesDateSoapOut"/>
+		</operation>
+		<operation name="LastMonthlyExRatesDate">
+			<documentation>Последняя дата установления Национальным банком Республики Беларусь официального курса белорусского рубля по отношению к иностранным валютам на ежемесячной основе</documentation>
+			<input name="LastMonthlyExRatesDateRequest"
+					message="tns:LastMonthlyExRatesDateSoapIn"/>
+			<output name="LastMonthlyExRatesDateResponse"
+					message="tns:LastMonthlyExRatesDateSoapOut"/>
+		</operation>
+		<operation name="ExRatesDaily">
+			<documentation>Официальный курс белорусского рубля по отношению к иностранным валютам, устанавливаемый Национальным банком Республики Беларусь ежедневно, а также до 17.02.1997 г.</documentation>
+			<input name="ExRatesDailyRequest"
+					message="tns:ExRatesDailySoapIn"/>
+			<output name="ExRatesDailyResponse"
+					message="tns:ExRatesDailySoapOut"/>
+		</operation>
+		<operation name="ExRatesMonthly">
+			<documentation>Официальный курс белорусского рубля по отношению к иностранным валютам, устанавливаемый Национальным банком Республики Беларусь ежемесячно</documentation>
+			<input name="ExRatesMonthlyRequest"
+					message="tns:ExRatesMonthlySoapIn"/>
+			<output name="ExRatesMonthlyResponse"
+					message="tns:ExRatesMonthlySoapOut"/>
+		</operation>
+		<operation name="ExRatesDyn">
+			<documentation>Динамика официального курса белорусского рубля по отношению к заданной иностранной валюте, устанавливаемого Национальным банком Республики Беларусь (не более чем за 365 дней)</documentation>
+			<input name="ExRatesDynRequest"
+					message="tns:ExRatesDynSoapIn"/>
+			<output name="ExRatesDynResponse"
+					message="tns:ExRatesDynSoapOut"/>
+		</operation>
+		<operation name="CurrenciesRef">
+			<documentation>Полный перечень иностранных валют, к которым официальный курс белорусского рубля устанавливается Национальным банком Республики Беларусь</documentation>
+			<input name="CurrenciesRefRequest"
+					message="tns:CurrenciesRefSoapIn"/>
+			<output name="CurrenciesRefResponse"
+					message="tns:CurrenciesRefSoapOut"/>
+		</operation>
+		<operation name="MetalsLastDate">
+			<documentation>Последняя дата установления Национальным банком Республики Беларусь цен на драгоценные металлы в виде банковских слитков</documentation>
+			<input name="MetalsLastDateRequest"
+					message="tns:MetalsLastDateSoapIn"/>
+			<output name="MetalsLastDateResponse"
+					message="tns:MetalsLastDateSoapOut"/>
+		</operation>
+		<operation name="MetalsRef">
+			<documentation>Перечень драгоценных металлов, на которые Национальным банком Республики Беларусь устанавливаются учетные цены</documentation>
+			<input name="MetalsRefRequest"
+					message="tns:MetalsRefSoapIn"/>
+			<output name="MetalsRefResponse"
+					message="tns:MetalsRefSoapOut"/>
+		</operation>
+		<operation name="MetalsPrices">
+			<documentation>Динамика учетных цен на драгоценные металлы в виде банковских слитков, устанавливаемые Национальным банком Республики Беларусь (не более, чем за 31 день)</documentation>
+			<input name="MetalsPricesRequest"
+					message="tns:MetalsPricesSoapIn"/>
+			<output name="MetalsPricesResponse"
+					message="tns:MetalsPricesSoapOut"/>
+		</operation>
+		<operation name="IngotsPrices">
+			<documentation>Цены покупки и продажи Национальным банком Республики Беларусь драгоценных металлов в виде мерных слитков</documentation>
+			<input name="IngotsPricesRequest"
+					message="tns:IngotsPricesSoapIn"/>
+			<output name="IngotsPricesResponse"
+					message="tns:IngotsPricesSoapOut"/>
+		</operation>
+		<operation name="IngotsLastDate">
+			<documentation>Последняя дата установления Национальным банком Республики Беларусь цен покупки и продажи драгоценных металлов в виде мерных слитков</documentation>
+			<input name="IngotsLastDateRequest"
+					message="tns:IngotsLastDateSoapIn"/>
+			<output name="IngotsLastDateResponse"
+					message="tns:IngotsLastDateSoapOut"/>
+		</operation>
+		<operation name="StockAddRates">
+			<documentation>Курс белорусского рубля по отношению к основным иностранным валютам по итогам дополнительной торговой сессии ОАО "Белорусская валютно-фондовая биржа"</documentation>
+			<input name="StockAddRatesRequest"
+					message="tns:StockAddRatesSoapIn"/>
+			<output name="StockAddRatesResponse"
+					message="tns:StockAddRatesSoapOut"/>
+		</operation>
+		<operation name="StockAddRatesLastDate">
+			<documentation>Последняя дата установления курса белорусского рубля по отношению к основным иностранным валютам по итогам дополнительной торговой сессии ОАО "Белорусская валютно-фондовая биржа"</documentation>
+			<input name="StockAddRatesLastDateRequest"
+					message="tns:StockAddRatesLastDateSoapIn"/>
+			<output name="StockAddRatesLastDateResponse"
+					message="tns:StockAddRatesLastDateSoapOut"/>
+		</operation>
+		<operation name="RefRateOnDate">
+			<documentation>Ставка рефинансирования Национального банка на дату</documentation>
+			<input name="RefRateOnDateRequest"
+					message="tns:RefRateOnDateSoapIn"/>
+			<output name="RefRateOnDateResponse"
+					message="tns:RefRateOnDateSoapOut"/>
+		</operation>
+		<operation name="RefRateDyn">
+			<documentation>Динамика ставки рефинансирования Национального банка</documentation>
+			<input name="RefRateDynRequest"
+					message="tns:RefRateDynSoapIn"/>
+			<output name="RefRateDynResponse"
+					message="tns:RefRateDynSoapOut"/>
+		</operation>
+	</portType>
+	<binding name="ExRatesSoap"
+			type="tns:ExRatesSoap">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="CurrenciesRefDaily">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/CurrenciesRefDaily"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="CurrenciesRefMonthly">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/CurrenciesRefMonthly"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="StartDate">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/StartDate"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="LastDailyExRatesDate">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/LastDailyExRatesDate"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="LastMonthlyExRatesDate">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/LastMonthlyExRatesDate"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExRatesDaily">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/ExRatesDaily"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExRatesMonthly">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/ExRatesMonthly"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExRatesDyn">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/ExRatesDyn"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="CurrenciesRef">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/CurrenciesRef"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="MetalsLastDate">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/MetalsLastDate"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="MetalsRef">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/MetalsRef"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="MetalsPrices">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/MetalsPrices"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="IngotsPrices">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/IngotsPrices"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="IngotsLastDate">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/IngotsLastDate"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="StockAddRates">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/StockAddRates"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="StockAddRatesLastDate">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/StockAddRatesLastDate"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="RefRateOnDate">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/RefRateOnDate"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="RefRateDyn">
+			<soapbind:operation style="document"
+					soapAction="http://www.nbrb.by/RefRateDyn"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<binding name="ExRatesSoap12"
+			type="tns:ExRatesSoap">
+		<soap12bind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="CurrenciesRefDaily">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/CurrenciesRefDaily"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="CurrenciesRefMonthly">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/CurrenciesRefMonthly"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="StartDate">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/StartDate"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="LastDailyExRatesDate">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/LastDailyExRatesDate"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="LastMonthlyExRatesDate">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/LastMonthlyExRatesDate"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExRatesDaily">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/ExRatesDaily"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExRatesMonthly">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/ExRatesMonthly"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExRatesDyn">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/ExRatesDyn"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="CurrenciesRef">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/CurrenciesRef"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="MetalsLastDate">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/MetalsLastDate"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="MetalsRef">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/MetalsRef"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="MetalsPrices">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/MetalsPrices"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="IngotsPrices">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/IngotsPrices"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="IngotsLastDate">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/IngotsLastDate"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="StockAddRates">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/StockAddRates"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="StockAddRatesLastDate">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/StockAddRatesLastDate"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="RefRateOnDate">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/RefRateOnDate"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="RefRateDyn">
+			<soap12bind:operation style="document"
+					soapAction="http://www.nbrb.by/RefRateDyn"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="ExRates">
+		<port name="ExRatesSoap"
+				binding="tns:ExRatesSoap">
+			<soapbind:address location="http://www.nbrb.by/Services/ExRates.asmx"/>
+		</port>
+		<port name="ExRatesSoap12"
+				binding="tns:ExRatesSoap12">
+			<soap12bind:address location="http://www.nbrb.by/Services/ExRates.asmx"/>
+		</port>
+	</service>
+</definitions>

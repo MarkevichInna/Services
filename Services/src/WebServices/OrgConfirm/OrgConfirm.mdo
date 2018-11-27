@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e155a094-ea74-46fc-a8dd-b4c366cb25bd">
+  <name>OrgConfirm</name>
+  <synonym>
+    <key>ru</key>
+    <value>Org confirm</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://OrgConfirm</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.OrgConfirmXDTO</value>
+  </xdtoPackages>
+  <descriptorFileName>OrgConfirm.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="c0ca5d62-6cc7-451c-86a4-e59c25d2e427">
+    <name>OrgConfirmCheck</name>
+    <synonym>
+      <key>ru</key>
+      <value>Org confirm check</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>Confirm</name>
+      <nsUri>http://www.OrgConfirm</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>OrgConfirmCheck</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="51a91e44-e13d-4d6c-990d-b3227ecf3810">
+      <name>UNP</name>
+      <synonym>
+        <key>ru</key>
+        <value>UNP</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="263586e9-bfab-4cbd-b766-57d98d296083">
+  <producedTypes>
+    <managerType typeId="156a03db-c448-4c82-8593-773b1fafb59b" valueTypeId="c4ccaae3-47e5-405d-85da-fc3f706b5186"/>
+    <valueManagerType typeId="2ed1ad8c-e6a2-4ea5-8591-0671e0dd31fb" valueTypeId="8cdab7a3-4737-4b03-9f71-23d0de851975"/>
+  </producedTypes>
+  <name>С_ДатаОбновленияРеестраПравонарушений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата обновления реестра  правонарушений</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

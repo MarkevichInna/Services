@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16e425bf-1e8b-41cd-a835-0eff382fb809">
+  <name>С_ОбновлениеРегистраЕГРСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>С обновление регистра ЕГРСервер</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+</mdclass:CommonModule>

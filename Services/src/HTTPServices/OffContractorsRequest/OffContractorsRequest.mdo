@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6ceb36aa-866b-4e33-827c-b81b062b3375">
+  <name>OffContractorsRequest</name>
+  <synonym>
+    <key>ru</key>
+    <value>Off contractors request</value>
+  </synonym>
+  <comment></comment>
+  <rootURL>OffContractors</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="e385fa73-150c-470d-a0b0-833f34840aec">
+    <name>OffContractors</name>
+    <synonym>
+      <key>ru</key>
+      <value>Off contractors</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="df1a220c-e7e9-46ae-84ed-b860fc8dcc8d">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>POSTRequest</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

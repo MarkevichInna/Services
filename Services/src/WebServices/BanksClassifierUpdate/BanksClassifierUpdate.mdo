@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4fdcce38-f322-48d2-b7df-3511b08ada5e">
+  <name>BanksClassifierUpdate</name>
+  <synonym>
+    <key>ru</key>
+    <value>Banks classifier update</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://BanksClassifierUpdate</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.BanksClassifierXDTO</value>
+  </xdtoPackages>
+  <descriptorFileName>BanksClassifierUpdate.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="0dbcbe57-aa61-4690-8b90-98035704964b">
+    <name>BanksClassifierUpdateAlert</name>
+    <synonym>
+      <key>ru</key>
+      <value>Banks classifier update alert</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>DateUpdate</name>
+      <nsUri>http://www.BanksClassifierUpdate</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьДатуОбновленияБанков</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </operations>
+</mdclass:WebService>

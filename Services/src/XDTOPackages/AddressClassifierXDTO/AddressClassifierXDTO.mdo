@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="19b0caaa-0c3d-425f-9639-05c80c458c82">
+  <name>AddressClassifierXDTO</name>
+  <synonym>
+    <key>ru</key>
+    <value>Address classifier XDTO</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://www.AddressClassifierUpdate</namespace>
+</mdclass:XDTOPackage>

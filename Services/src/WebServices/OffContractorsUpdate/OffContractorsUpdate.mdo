@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d5460c8-0fb7-4676-a60c-b56201da76c2">
+  <name>OffContractorsUpdate</name>
+  <synonym>
+    <key>ru</key>
+    <value>Off contractors update</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://OffContractors</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.OffContractorsXDTO</value>
+  </xdtoPackages>
+  <descriptorFileName>OffContractorsUpdate.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="c1a55eec-2e7c-4a72-8dd6-c575a118e669">
+    <name>OffContractorsUpdateAlert</name>
+    <synonym>
+      <key>ru</key>
+      <value>Off contractors update alert</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>DateUpdate</name>
+      <nsUri>http://www.OffContractorsUpdate</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьДатуОбновленияКонтрагентов</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </operations>
+</mdclass:WebService>

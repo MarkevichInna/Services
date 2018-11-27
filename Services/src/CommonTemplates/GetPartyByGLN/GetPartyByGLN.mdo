@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f620cdf1-7d93-44c0-b1ff-f7310686c177">
+  <name>GetPartyByGLN</name>
+  <synonym>
+    <key>ru</key>
+    <value>Get party by GLN</value>
+  </synonym>
+  <comment></comment>
+  <templateType>TextDocument</templateType>
+</mdclass:CommonTemplate>

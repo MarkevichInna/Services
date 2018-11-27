@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa33e16b-bfb7-4a79-aad3-600e8ae062a4">
+  <name>CurrClassifierRequest</name>
+  <synonym>
+    <key>ru</key>
+    <value>Curr classifier request</value>
+  </synonym>
+  <comment></comment>
+  <rootURL>CurrClassifier</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="ec6ac2db-e5bf-4542-b6f2-1473bdc2891a">
+    <name>CurrClassifier</name>
+    <synonym>
+      <key>ru</key>
+      <value>Curr classifier</value>
+    </synonym>
+    <comment></comment>
+    <template>/*</template>
+    <methods uuid="97321861-f6e5-4e43-816d-aba485a1d726">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <comment></comment>
+      <httpMethod>POST</httpMethod>
+      <handler>POSTRequest</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

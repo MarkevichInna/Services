@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c928a07-9c89-48a4-b28e-d72125983ce3">
+  <name>КурсыВалют</name>
+  <synonym>
+    <key>ru</key>
+    <value>Курсы валют</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.С_КлассификаторВалютСервер</content>
+  <content>HTTPService.CurrRatesRequest</content>
+  <content>CommonModule.С_КурсыВалютСервер</content>
+  <content>ScheduledJob.С_ЗагрузкаКурсовВалют</content>
+  <content>InformationRegister.С_КурсыВалют</content>
+  <parentSubsystem>Subsystem.Сервисы</parentSubsystem>
+</mdclass:Subsystem>

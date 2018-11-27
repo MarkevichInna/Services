@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ff50847-8553-48c1-be5f-ef267582325a">
+  <producedTypes>
+    <selectionType typeId="ee195de2-c4c0-481c-9b41-8afa526c3382" valueTypeId="169ebafc-d8f8-4f86-bfa3-009ec78741fd"/>
+    <listType typeId="82710e7c-e22d-4e01-9787-7e6316dc2354" valueTypeId="f308feab-0bb5-49b7-a42e-2d49af3f5d6a"/>
+    <managerType typeId="72d2a08d-7aa4-4bf2-8708-411dd5da2273" valueTypeId="18c15618-541a-459a-b1bc-cf1353bac2e1"/>
+    <recordSetType typeId="d82680d1-e131-464a-b613-92469f0ac8c4" valueTypeId="a4145fca-577c-4ef8-873b-9ca6852068df"/>
+    <recordKeyType typeId="5ff066a9-2e47-4caa-b47f-6bd0e5b1fd41" valueTypeId="ac8f9fe9-d2da-45af-a075-cbc78dba9426"/>
+    <recordType typeId="f868baec-b0fa-4abf-88f6-0ee218930201" valueTypeId="55ca3f4b-9aa8-489c-9af8-ff58e8145583"/>
+    <recordManagerType typeId="f31e4322-7e3c-4698-a78d-c5f3fc24a8e9" valueTypeId="984ce394-dc7b-4577-a20e-c2760bb417b5"/>
+  </producedTypes>
+  <name>С_ВерсииОбъектовАдресногоКлассификатора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Версии объектов адресного классификатора</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="73bbe042-b7a2-457c-804f-3d241a77c9ce">
+    <name>ДатаВыпускаВерсии</name>
+    <synonym>
+      <key>ru</key>
+      <value>UTC дата версии</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>UTC дата версии классификатора</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+  </resources>
+  <resources uuid="434b9d7b-4917-41df-9907-712d9fc51c96">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование адресного объекта</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="9441d412-fc83-455e-8d4e-b21df6f3ecfb">
+    <name>АдресныйОбъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адресный объект</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Код адресного объекта</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>  </value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

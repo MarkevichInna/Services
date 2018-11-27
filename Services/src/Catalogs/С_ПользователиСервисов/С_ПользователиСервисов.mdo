@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6ab14f7a-2845-4e34-9168-66ff7958524d">
+  <producedTypes>
+    <objectType typeId="fdeb37b4-49cc-4ba4-97d0-ac7c3e1d580a" valueTypeId="fb3678b6-79ba-47fa-a2e5-da52aced6b16"/>
+    <refType typeId="4dbd5e73-2db3-4235-9fe7-982d89e43767" valueTypeId="9a7d4afe-019d-4ca8-821a-44c8c4a6387c"/>
+    <selectionType typeId="3aee2324-6603-4f10-8813-620fe561209c" valueTypeId="57cff5f6-9d09-4f3f-ada2-6806fa2b8dd9"/>
+    <listType typeId="f57e0347-0022-4a1c-a67d-8893a5eb9455" valueTypeId="e643470c-20da-4336-a5f5-bcd610a21dd6"/>
+    <managerType typeId="0640b00a-2bec-4775-ab3c-425566d9cf11" valueTypeId="54d1920d-71b5-4654-bef0-c3a66588538b"/>
+  </producedTypes>
+  <name>С_ПользователиСервисов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пользователи сервисов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.С_ПользователиСервисов.Attribute.УНП</inputByString>
+  <inputByString>Catalog.С_ПользователиСервисов.Attribute.РегистрационныйНомерОсновнойПоставки</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.С_ПользователиСервисов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.С_ПользователиСервисов.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="ae1480e0-a586-4705-9156-613e7007e01d">
+    <name>УНП</name>
+    <synonym>
+      <key>ru</key>
+      <value>УНП</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="60e4733e-a95b-4bb6-81d4-a5328553a61d">
+    <name>РегистрационныйНомерОсновнойПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрационный номер основной поставки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c9f44f93-cfa6-4e0e-bc78-1165cc8a9d89">
+    <name>НаименованиеОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование организации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ffdfa899-021c-410a-bad8-9aa3b1ebd9d5">
+    <name>РегистрационныйНомерКонфигурации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрационный номер конфигурации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="134de195-d48b-4987-82f8-4ffd09d01c2f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bfca0966-82a8-4886-9d82-db2ada49f47b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

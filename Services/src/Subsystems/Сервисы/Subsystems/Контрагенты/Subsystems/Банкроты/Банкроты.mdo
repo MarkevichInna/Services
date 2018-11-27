@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f9abda1-84dd-41f7-a7e7-c0a8b842fc7d">
+  <name>Банкроты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Банкроты</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <parentSubsystem>Subsystem.Сервисы.Subsystem.Контрагенты</parentSubsystem>
+</mdclass:Subsystem>

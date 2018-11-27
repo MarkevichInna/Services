@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WSReference xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="247dc9b1-32f6-4294-8f6e-74476c3a67d0">
+  <producedTypes>
+    <managerType typeId="119e93b6-dba1-42b0-9b36-6344011f14ba" valueTypeId="df5dc390-8ac2-4857-b3d0-7c538af1c91b"/>
+  </producedTypes>
+  <name>WSСсылкаНБРБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>WSСсылка НБРБ</value>
+  </synonym>
+  <comment></comment>
+  <locationURL>http://www.nbrb.by/Services/ExRates.asmx?WSDL</locationURL>
+</mdclass:WSReference>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e62de4ca-c171-4a44-ba42-7e1750123208">
+  <name>ApplicationPermissions_1_0_0_2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Application permissions 1 0 0 2</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://www.1c.ru/1cFresh/Application/Permissions/1.0.0.2</namespace>
+</mdclass:XDTOPackage>

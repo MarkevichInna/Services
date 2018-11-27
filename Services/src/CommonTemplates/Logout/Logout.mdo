@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a043b35b-6f37-488d-95d1-7d4300dab4fa">
+  <name>Logout</name>
+  <synonym>
+    <key>ru</key>
+    <value>Logout</value>
+  </synonym>
+  <comment></comment>
+  <templateType>TextDocument</templateType>
+</mdclass:CommonTemplate>

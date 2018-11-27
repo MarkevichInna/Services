@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2993f410-0239-4cf8-93c7-e5cc64963aff">
+  <producedTypes>
+    <objectType typeId="bd79bd1d-62dc-4054-9336-fb894c2afa4e" valueTypeId="cf5fa9a9-c281-45d8-9541-d2c94699e17e"/>
+    <managerType typeId="e243d530-c0e8-474e-ba3e-eb0d302ad59e" valueTypeId="4aa0cb91-1277-4ab5-9703-3115ad4e5bf2"/>
+  </producedTypes>
+  <name>ЗагрузкаВерсийКонфигураций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка версий конфигураций</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаВерсийКонфигураций.Form.Форма</defaultForm>
+  <attributes uuid="5e24f2b9-59fb-48d6-83cb-b27d8b59d85b">
+    <name>Конфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.С_Конфигурации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="c7c48406-3194-4419-b403-ffd41ad93807">
+    <name>Версии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версии</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>SpreadsheetDocument</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="2e0e01b9-7233-4675-9005-385ad4207700">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

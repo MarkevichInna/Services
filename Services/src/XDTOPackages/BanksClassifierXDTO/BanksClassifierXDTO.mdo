@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce3b1b16-3956-4348-98fe-c107f71ea04c">
+  <name>BanksClassifierXDTO</name>
+  <synonym>
+    <key>ru</key>
+    <value>Banks classifier XDTO</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://www.BanksClassifierUpdate</namespace>
+</mdclass:XDTOPackage>
