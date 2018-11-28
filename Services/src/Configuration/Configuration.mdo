@@ -659,6 +659,7 @@
   <catalogs>Catalog.С_Сервисы</catalogs>
   <catalogs>Catalog.СтраныМира</catalogs>
   <catalogs>Catalog.УчетныеЗаписиЭлектроннойПочты</catalogs>
+  <catalogs>Catalog.СправочникТестовый</catalogs>
   <documents>Document.РегистрацияИТС</documents>
   <enums>Enum.ВариантыSMTPАутентификации</enums>
   <enums>Enum.ВариантыПубликацииДополнительныхОтчетовИОбработок</enums>

@@ -44,6 +44,7 @@
   <content>Catalog.С_ОрганизацииКонфигурации</content>
   <content>DataProcessor.С_РабочийСтол</content>
   <content>InformationRegister.С_КоробкиФайл</content>
+  <content>Catalog.СправочникТестовый</content>
   <subsystems>ИТС</subsystems>
   <subsystems>ПользователиСервисов</subsystems>
   <subsystems>РегламентныеИФоновыеЗадания</subsystems>
