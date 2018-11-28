@@ -2114,8 +2114,10 @@
 	РегистрацияСервисов.IDDOCREQUEST
 ИЗ
 	РегистрСведений.С_РегистрацияСервисов КАК РегистрацияСервисов
-ГДЕ
-	РегистрацияСервисов.ПользовательСервиса = &amp;ПользовательСервиса</queryText>
+{ ГДЕ
+	РегистрацияСервисов.ПользовательСервиса = &amp;ПользовательСервиса
+	
+	}</queryText>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <autoSaveUserSettings>true</autoSaveUserSettings>
